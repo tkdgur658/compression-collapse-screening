@@ -1,0 +1,55 @@
+{
+ "params_inference_unfused": 1334337,
+ "params_inference_fused": 1318081,
+ "params_total_unfused": 1335880,
+ "params_total_fused": 1319624,
+ "n_bn_unfused": 33,
+ "n_bn_fused": 0,
+ "gflops_thop_fused": 2.992871424,
+ "gflops_thop_unfused": 3.370293248,
+ "equivalence": [
+  {
+   "ds": "PH2",
+   "n_img": 6,
+   "max_abs_diff": 9.1552734375e-05,
+   "sign_agree": 1.0,
+   "logit_absmax": 84.06080627441406
+  },
+  {
+   "ds": "cvc",
+   "n_img": 6,
+   "max_abs_diff": 3.814697265625e-05,
+   "sign_agree": 1.0,
+   "logit_absmax": 45.902427673339844
+  },
+  {
+   "ds": "etis",
+   "n_img": 6,
+   "max_abs_diff": 5.340576171875e-05,
+   "sign_agree": 1.0,
+   "logit_absmax": 91.50993347167969
+  },
+  {
+   "ds": "isic17",
+   "n_img": 6,
+   "max_abs_diff": 3.814697265625e-05,
+   "sign_agree": 1.0,
+   "logit_absmax": 47.82555389404297
+  },
+  {
+   "ds": "isic18",
+   "n_img": 6,
+   "max_abs_diff": 0.0001678466796875,
+   "sign_agree": 1.0,
+   "logit_absmax": 180.81338500976562
+  },
+  {
+   "ds": "kvasir",
+   "n_img": 6,
+   "max_abs_diff": 5.340576171875e-05,
+   "sign_agree": 1.0,
+   "logit_absmax": 79.17774963378906
+  }
+ ],
+ "max_abs_diff_all": 0.0001678466796875
+}

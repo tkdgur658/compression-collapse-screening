@@ -1,0 +1,43 @@
+{
+ "7.1a_convbn_fold_fp64": {
+  "PASS": true,
+  "msg": "max|d|=2.22e-15"
+ },
+ "7.1b_pbe_fusion_correct": {
+  "PASS": true,
+  "msg": "E1 fp64 max|d|=1.03e-13 (<1e-10, gate 1e-04)"
+ },
+ "7.1c_pbe_missing_identity": {
+  "PASS": true,
+  "msg": "E1 fp64 max|d|=1.25e+02 (must FAIL gate)"
+ },
+ "7.1d_pbe_var2_fold": {
+  "PASS": true,
+  "msg": "E1 fp64 max|d|=2.35e+08 (must FAIL gate)"
+ },
+ "7.1e_generic_fold_tinyunet": {
+  "PASS": true,
+  "msg": "correct 9.70e-14 (<1e-10), var^2 7.47e+14 (must FAIL gate)"
+ },
+ "7.2a_w4_outlier": {
+  "PASS": true,
+  "msg": "per-tensor zero frac ch1-7=1.000 (>=0.9); per-channel max rel err=0.0713 (<=1/14); levels<=15"
+ },
+ "7.2b_w4_convtranspose_axis1": {
+  "PASS": true,
+  "msg": "max rel err=0.0714, levels<=15"
+ },
+ "7.2c_a6_pt_pc": {
+  "PASS": true,
+  "msg": "levels pt<=49 pc<=54; pc max rel err conv=0.0161 linear=0.0161 (<=1/62)"
+ },
+ "7.2d_l50_layer_channel": {
+  "PASS": true,
+  "msg": "layer zero=0.5000 (def 0.5000); channel zero min/max=0.5000/0.5000 (def 0.5000)"
+ },
+ "7.4_planted_pbe_kvasir_k1": {
+  "PASS": true,
+  "msg": "|dDice fp32|=0.0e+00, E1=9.2e-14, |dR D_w4|=0.0000, |dR S_w4c|=0.0000 (<=0.02), per-tensor zeroes 1.000 of planted tensor ch1.. (>=0.9)"
+ },
+ "ALL_PASS": true
+}

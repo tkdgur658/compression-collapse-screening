@@ -1,0 +1,21 @@
+\begin{table*}[!t]
+\centering
+\caption{\label{tab:main_polyp}Per-image IoU of the evaluated models (mean $\pm$ standard deviation over five splits). Bold marks the highest mean in each dataset. $^{\blacktriangledown}$ and $^{\blacktriangle}$ mark a mean significantly lower or higher than the proposed model (two-sided paired $t$-test over the five splits, Holm correction within each dataset, $\alpha=0.05$).}
+\begin{tblr}{colspec={X[l,1.2] X[c,1] X[c,1] X[c,1] X[c,1] X[c,1] X[c,1]}, width=\textwidth, colsep=1pt}
+\hline
+Model & PH2 & ISIC 2017 & ISIC 2018 & Kvasir-SEG & CVC-ClinicDB & ETIS-Larib \\
+\hline
+Proposed & \tbd{incomplete} & \tbd{incomplete} & \tbd{incomplete} & \tbd{incomplete} & \tbd{incomplete} & \tbd{incomplete} \\
+MAResUNet & {\textbf{0.876 $\pm$ 0.010}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.837 $\pm$ 0.003}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.827 $\pm$ 0.006}\phantom{$^{\blacktriangledown}$}} & {0.768 $\pm$ 0.018\phantom{$^{\blacktriangledown}$}} & {0.810 $\pm$ 0.027\phantom{$^{\blacktriangledown}$}} & {0.480 $\pm$ 0.093\phantom{$^{\blacktriangledown}$}} \\
+UTANet & {0.864 $\pm$ 0.023\phantom{$^{\blacktriangledown}$}} & {0.832 $\pm$ 0.011\phantom{$^{\blacktriangledown}$}} & {0.824 $\pm$ 0.005\phantom{$^{\blacktriangledown}$}} & {\textbf{0.769 $\pm$ 0.014}\phantom{$^{\blacktriangledown}$}} & {0.809 $\pm$ 0.019\phantom{$^{\blacktriangledown}$}} & {0.476 $\pm$ 0.119\phantom{$^{\blacktriangledown}$}} \\
+MK-UNet & {0.875 $\pm$ 0.010\phantom{$^{\blacktriangledown}$}} & {0.833 $\pm$ 0.006\phantom{$^{\blacktriangledown}$}} & {0.822 $\pm$ 0.009\phantom{$^{\blacktriangledown}$}} & {0.762 $\pm$ 0.025\phantom{$^{\blacktriangledown}$}} & {\textbf{0.819 $\pm$ 0.027}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.618 $\pm$ 0.089}\phantom{$^{\blacktriangledown}$}} \\
+MHorUNet & {0.870 $\pm$ 0.012\phantom{$^{\blacktriangledown}$}} & {0.828 $\pm$ 0.003\phantom{$^{\blacktriangledown}$}} & {0.821 $\pm$ 0.005\phantom{$^{\blacktriangledown}$}} & {0.733 $\pm$ 0.024\phantom{$^{\blacktriangledown}$}} & {0.729 $\pm$ 0.036\phantom{$^{\blacktriangledown}$}} & {0.472 $\pm$ 0.038\phantom{$^{\blacktriangledown}$}} \\
+TinyU-Net & {0.874 $\pm$ 0.009\phantom{$^{\blacktriangledown}$}} & {0.832 $\pm$ 0.008\phantom{$^{\blacktriangledown}$}} & {0.824 $\pm$ 0.005\phantom{$^{\blacktriangledown}$}} & {0.758 $\pm$ 0.026\phantom{$^{\blacktriangledown}$}} & {0.811 $\pm$ 0.027\phantom{$^{\blacktriangledown}$}} & {0.567 $\pm$ 0.097\phantom{$^{\blacktriangledown}$}} \\
+UCMNet & {0.873 $\pm$ 0.009\phantom{$^{\blacktriangledown}$}} & {0.832 $\pm$ 0.008\phantom{$^{\blacktriangledown}$}} & {0.820 $\pm$ 0.007\phantom{$^{\blacktriangledown}$}} & {0.687 $\pm$ 0.020\phantom{$^{\blacktriangledown}$}} & {0.709 $\pm$ 0.030\phantom{$^{\blacktriangledown}$}} & {0.482 $\pm$ 0.051\phantom{$^{\blacktriangledown}$}} \\
+LB-UNet & {0.864 $\pm$ 0.011\phantom{$^{\blacktriangledown}$}} & {0.828 $\pm$ 0.005\phantom{$^{\blacktriangledown}$}} & {0.817 $\pm$ 0.008\phantom{$^{\blacktriangledown}$}} & {0.644 $\pm$ 0.022\phantom{$^{\blacktriangledown}$}} & {0.624 $\pm$ 0.043\phantom{$^{\blacktriangledown}$}} & {0.359 $\pm$ 0.129\phantom{$^{\blacktriangledown}$}} \\
+CMUNeXt & {0.868 $\pm$ 0.012\phantom{$^{\blacktriangledown}$}} & {0.829 $\pm$ 0.008\phantom{$^{\blacktriangledown}$}} & {0.822 $\pm$ 0.003\phantom{$^{\blacktriangledown}$}} & {0.739 $\pm$ 0.021\phantom{$^{\blacktriangledown}$}} & {0.734 $\pm$ 0.030\phantom{$^{\blacktriangledown}$}} & {0.348 $\pm$ 0.059\phantom{$^{\blacktriangledown}$}} \\
+EGE-UNet & {0.851 $\pm$ 0.008\phantom{$^{\blacktriangledown}$}} & {0.820 $\pm$ 0.007\phantom{$^{\blacktriangledown}$}} & {0.814 $\pm$ 0.007\phantom{$^{\blacktriangledown}$}} & {0.615 $\pm$ 0.034\phantom{$^{\blacktriangledown}$}} & {0.556 $\pm$ 0.045\phantom{$^{\blacktriangledown}$}} & {0.272 $\pm$ 0.075\phantom{$^{\blacktriangledown}$}} \\
+MALUNet & {0.859 $\pm$ 0.019\phantom{$^{\blacktriangledown}$}} & {0.825 $\pm$ 0.004\phantom{$^{\blacktriangledown}$}} & {0.815 $\pm$ 0.008\phantom{$^{\blacktriangledown}$}} & {0.628 $\pm$ 0.042\phantom{$^{\blacktriangledown}$}} & {0.609 $\pm$ 0.054\phantom{$^{\blacktriangledown}$}} & {0.319 $\pm$ 0.089\phantom{$^{\blacktriangledown}$}} \\
+\hline
+\end{tblr}
+\end{table*}

@@ -1,0 +1,14 @@
+{
+ "model": "malunet",
+ "class": "MALUNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/MALUNet.py",
+  "sha256": "7bab73227cd159d6a82ee0df6ad406352ce54f0a578c38487753605e34caa739",
+  "copied_to": "src/MALUNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

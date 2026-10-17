@@ -1,0 +1,14 @@
+{
+ "model": "egeunet",
+ "class": "EGEUNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/EGEUNet.py",
+  "sha256": "3dd2b6817618843d95910cc4348640a8636155770a1f04a9d31bf83392924ace",
+  "copied_to": "src/EGEUNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

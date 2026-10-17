@@ -1,0 +1,1595 @@
+{
+ "E1_failed_excluded_from_D_S": [],
+ "branch_ii": {
+  "N_PBE_D": 10,
+  "den": 18,
+  "partial": false,
+  "text": "PBE-Net vulnerability remains in the deployment graph; main Q table uses D, O becomes stress setting",
+  "verdict": "survives"
+ },
+ "empty_fp32_test_masks": 21,
+ "equivalence": {
+  "E1_max_fp64_by_model": {
+   "cmunext": 1.1652900866465643e-12,
+   "egeunet": 0.0,
+   "lbunet": 6.195044477408373e-14,
+   "malunet": 0.0,
+   "maresunet": 3.54605234065275e-13,
+   "mhorunet": 0.0,
+   "mk_unet": 1.1823875212257917e-13,
+   "pbe": 2.5579538487363607e-13,
+   "tinyunet": 2.0028423364237824e-13,
+   "ucmnet": 0.0,
+   "utanet": 2.0439205883349132e-13
+  },
+  "E2_rel_fp32_max_by_model": {
+   "cmunext": 2.0178559255808807e-05,
+   "egeunet": 0.0,
+   "lbunet": 2.9631576015583824e-06,
+   "malunet": 0.0,
+   "maresunet": 1.0038940300250021e-05,
+   "mhorunet": 0.0,
+   "mk_unet": 4.674191753048629e-06,
+   "pbe": 1.6895094603143613e-06,
+   "tinyunet": 6.622373074248657e-06,
+   "ucmnet": 0.0,
+   "utanet": 2.4272815848112e-05
+  },
+  "mask_mismatch_max_by_model": {
+   "cmunext": 0.0,
+   "egeunet": 0.0,
+   "lbunet": 0.0,
+   "malunet": 0.0,
+   "maresunet": 9.5367431640625e-07,
+   "mhorunet": 0.0,
+   "mk_unet": 0.0,
+   "pbe": 0.0,
+   "tinyunet": 0.0,
+   "ucmnet": 0.0,
+   "utanet": 0.0
+  }
+ },
+ "excluded": {
+  "malunet__isic18__k4": "old FAILED.txt rule not met"
+ },
+ "fp32_dice_train_minus_dep_maxabs": 7.013382652520939e-06,
+ "iii": {
+  "D": {
+   "L80": {
+    "agree": {
+     "per_setting": {
+      "D_a6": 0.9624810126582278,
+      "D_l50": 0.9820587861051024,
+      "D_w4": 0.9347568208778173
+     },
+     "pooled": {
+      "auc": 0.973475185776079,
+      "ci95": [
+       0.9657387674200366,
+       0.9801274375641464
+      ],
+      "n_neg": 589,
+      "n_pos": 398
+     },
+     "split": {
+      "max": 0.9894102990033222,
+      "mean": 0.9732213683819314,
+      "min": 0.961228813559322,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9613839285714286,
+       "2": 0.961228813559322,
+       "3": 0.97147319104633,
+       "4": 0.9826106097292538,
+       "5": 0.9894102990033222
+      }
+     }
+    },
+    "fg": {
+     "per_setting": {
+      "D_a6": 0.9241012658227848,
+      "D_l50": 0.9268354752513043,
+      "D_w4": 0.7944098457888493
+     },
+     "pooled": {
+      "auc": 0.9293112421189138,
+      "ci95": [
+       0.9118735058507738,
+       0.9454675317969812
+      ],
+      "n_neg": 589,
+      "n_pos": 398
+     },
+     "split": {
+      "max": 0.948382126348228,
+      "mean": 0.9293614193321249,
+      "min": 0.9024364406779661,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9438616071428572,
+       "2": 0.9024364406779661,
+       "3": 0.9143154606975533,
+       "4": 0.948382126348228,
+       "5": 0.93781146179402
+      }
+     }
+    },
+    "rule_agree_vs_fg": "agreement higher (diff 0.044, positive in 5/5 splits)",
+    "rule_agree_vs_sqnr": "agreement higher (diff 0.056, positive in 5/5 splits)",
+    "sqnr": {
+     "per_setting": {
+      "D_a6": 0.9520759493670886,
+      "D_l50": 0.6373584425499428,
+      "D_w4": 0.7442170818505338
+     },
+     "pooled": {
+      "auc": 0.9163367772649325,
+      "ci95": [
+       0.9001708079812366,
+       0.9318212719670961
+      ],
+      "n_neg": 589,
+      "n_pos": 398
+     },
+     "split": {
+      "max": 0.9304401993355482,
+      "mean": 0.9169497659748455,
+      "min": 0.9054025423728813,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9169642857142857,
+       "2": 0.9054025423728813,
+       "3": 0.9084331077563769,
+       "4": 0.9235086946951354,
+       "5": 0.9304401993355482
+      }
+     }
+    }
+   },
+   "L90": {
+    "agree": {
+     "per_setting": {
+      "D_a6": 0.9338791968400263,
+      "D_l50": 0.9827443172390907,
+      "D_w4": 0.9375750300120048
+     },
+     "pooled": {
+      "auc": 0.9632817312035478,
+      "ci95": [
+       0.9536503006999901,
+       0.9719363658960974
+      ],
+      "n_neg": 497,
+      "n_pos": 490
+     },
+     "split": {
+      "max": 0.9798259088581669,
+      "mean": 0.9638769126151736,
+      "min": 0.9527165032679739,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9564950980392157,
+       "2": 0.9527165032679739,
+       "3": 0.9689542483660131,
+       "4": 0.9613928045444982,
+       "5": 0.9798259088581669
+      }
+     }
+    },
+    "fg": {
+     "per_setting": {
+      "D_a6": 0.859776168531929,
+      "D_l50": 0.9434212709474034,
+      "D_w4": 0.8160494967217656
+     },
+     "pooled": {
+      "auc": 0.9090953886584815,
+      "ci95": [
+       0.8913500636628743,
+       0.9256012024048096
+      ],
+      "n_neg": 497,
+      "n_pos": 490
+     },
+     "split": {
+      "max": 0.9241531664212077,
+      "mean": 0.908818540274995,
+      "min": 0.8993055555555556,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9079861111111112,
+       "2": 0.8993055555555556,
+       "3": 0.9071691176470589,
+       "4": 0.9241531664212077,
+       "5": 0.9054787506400409
+      }
+     }
+    },
+    "rule_agree_vs_fg": "agreement higher (diff 0.055, positive in 5/5 splits)",
+    "rule_agree_vs_sqnr": "agreement higher (diff 0.062, positive in 5/5 splits)",
+    "sqnr": {
+     "per_setting": {
+      "D_a6": 0.9161866359447005,
+      "D_l50": 0.6629334660693545,
+      "D_w4": 0.7532551482131314
+     },
+     "pooled": {
+      "auc": 0.9008828481090625,
+      "ci95": [
+       0.8835408317456146,
+       0.9186581411807304
+      ],
+      "n_neg": 497,
+      "n_pos": 490
+     },
+     "split": {
+      "max": 0.9131944444444444,
+      "mean": 0.9016939880375163,
+      "min": 0.8874395118872291,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9078839869281046,
+       "2": 0.90625,
+       "3": 0.9131944444444444,
+       "4": 0.8874395118872291,
+       "5": 0.8937019969278034
+      }
+     }
+    }
+   },
+   "spearman": {
+    "D_a6": {
+     "agree": -0.8722665404318186,
+     "fg": -0.747673763461806,
+     "sqnr": -0.8448112202256686
+    },
+    "D_l50": {
+     "agree": -0.9678648605173088,
+     "fg": -0.9151265852914485,
+     "sqnr": -0.05171556829533163
+    },
+    "D_w4": {
+     "agree": -0.8342245196422674,
+     "fg": -0.6353065460745793,
+     "sqnr": -0.6129243356539672
+    }
+   }
+  },
+  "O": {
+   "L80": {
+    "agree": {
+     "per_setting": {
+      "O_a6": 0.9686828765357849,
+      "O_l50": 0.9853107344632769,
+      "O_w4": 0.9579914529914529
+     },
+     "pooled": {
+      "auc": 0.9750195256299585,
+      "ci95": [
+       0.9678831637137248,
+       0.9818976279650437
+      ],
+      "n_neg": 510,
+      "n_pos": 477
+     },
+     "split": {
+      "max": 0.9864434630789771,
+      "mean": 0.9748336112467163,
+      "min": 0.9558163265306122,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9864434630789771,
+       "2": 0.9558163265306122,
+       "3": 0.9787690109217108,
+       "4": 0.9705882352941176,
+       "5": 0.9825510204081632
+      }
+     }
+    },
+    "fg": {
+     "per_setting": {
+      "O_a6": 0.9261104905919753,
+      "O_l50": 0.9526679221594476,
+      "O_w4": 0.8546581196581197
+     },
+     "pooled": {
+      "auc": 0.9330291445718749,
+      "ci95": [
+       0.9170493284593585,
+       0.9476010986201265
+      ],
+      "n_neg": 510,
+      "n_pos": 477
+     },
+     "split": {
+      "max": 0.9402279963027627,
+      "mean": 0.9322554896608622,
+      "min": 0.9168367346938775,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9402279963027627,
+       "2": 0.9168367346938775,
+       "3": 0.927120547106257,
+       "4": 0.9379084967320261,
+       "5": 0.9391836734693878
+      }
+     }
+    },
+    "rule_agree_vs_fg": "agreement higher (diff 0.043, positive in 5/5 splits)",
+    "rule_agree_vs_sqnr": "agreement higher (diff 0.081, positive in 5/5 splits)",
+    "sqnr": {
+     "per_setting": {
+      "O_a6": 0.9521221754446259,
+      "O_l50": 0.6882611424984306,
+      "O_w4": 0.7547008547008547
+     },
+     "pooled": {
+      "auc": 0.8939881613022568,
+      "ci95": [
+       0.8748135788736456,
+       0.9126011398596208
+      ],
+      "n_neg": 510,
+      "n_pos": 477
+     },
+     "split": {
+      "max": 0.9021428571428571,
+      "mean": 0.8938236529008676,
+      "min": 0.882766765944336,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.882766765944336,
+       "2": 0.9021428571428571,
+       "3": 0.8970092885577218,
+       "4": 0.8998524140839131,
+       "5": 0.8873469387755102
+      }
+     }
+    }
+   },
+   "L90": {
+    "agree": {
+     "per_setting": {
+      "O_a6": 0.9535989135355365,
+      "O_l50": 0.9826388888888888,
+      "O_w4": 0.9540229885057471
+     },
+     "pooled": {
+      "auc": 0.9680223664978416,
+      "ci95": [
+       0.9593156405765862,
+       0.9763349984094367
+      ],
+      "n_neg": 403,
+      "n_pos": 584
+     },
+     "split": {
+      "max": 0.9809594723965536,
+      "mean": 0.9683455898121374,
+      "min": 0.9487123287671233,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9760860484544696,
+       "2": 0.9487123287671233,
+       "3": 0.9692815173693433,
+       "4": 0.9666885820731974,
+       "5": 0.9809594723965536
+      }
+     }
+    },
+    "fg": {
+     "per_setting": {
+      "O_a6": 0.8846008752074845,
+      "O_l50": 0.96045054200542,
+      "O_w4": 0.8324063774564331
+     },
+     "pooled": {
+      "auc": 0.9129516638906829,
+      "ci95": [
+       0.8956680377949503,
+       0.9295687537066848
+      ],
+      "n_neg": 403,
+      "n_pos": 584
+     },
+     "split": {
+      "max": 0.9300334168755221,
+      "mean": 0.9113919317401562,
+      "min": 0.8923835616438356,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.9300334168755221,
+       "2": 0.8923835616438356,
+       "3": 0.9081537985774663,
+       "4": 0.9195704580319964,
+       "5": 0.9068184235719604
+      }
+     }
+    },
+    "rule_agree_vs_fg": "agreement higher (diff 0.057, positive in 5/5 splits)",
+    "rule_agree_vs_sqnr": "agreement higher (diff 0.086, positive in 5/5 splits)",
+    "sqnr": {
+     "per_setting": {
+      "O_a6": 0.9237211407876867,
+      "O_l50": 0.7075711382113821,
+      "O_w4": 0.7600667408231369
+     },
+     "pooled": {
+      "auc": 0.8825801352867194,
+      "ci95": [
+       0.8610684875453941,
+       0.9029038112522686
+      ],
+      "n_neg": 403,
+      "n_pos": 584
+     },
+     "split": {
+      "max": 0.8973301721472013,
+      "mean": 0.8821510035944822,
+      "min": 0.8694937541091388,
+      "n_split_excluded": 0,
+      "per_split": {
+       "1": 0.8796992481203008,
+       "2": 0.886027397260274,
+       "3": 0.8973301721472013,
+       "4": 0.8694937541091388,
+       "5": 0.8782044463354962
+      }
+     }
+    }
+   },
+   "spearman": {
+    "O_a6": {
+     "agree": -0.9212986493433825,
+     "fg": -0.8127959581291373,
+     "sqnr": -0.8736810302583715
+    },
+    "O_l50": {
+     "agree": -0.9661900696065165,
+     "fg": -0.9295969834705646,
+     "sqnr": -0.18111325409044515
+    },
+    "O_w4": {
+     "agree": -0.8969224081574886,
+     "fg": -0.6950885907035362,
+     "sqnr": -0.5867090356452058
+    }
+   }
+  }
+ },
+ "integrity": {
+  "gpu_wall_s_total": 2535.6920354366302,
+  "restored_all": true
+ },
+ "n_items": 330,
+ "n_records": 330,
+ "n_used": 329,
+ "norm_left_by_model": {
+  "cmunext": {
+   "dep": {
+    "bn": 33,
+    "gn": 0,
+    "ln": 0
+   },
+   "n_folded": 10,
+   "params_inf_dep": 144545,
+   "params_inf_train": 144977,
+   "train": {
+    "bn": 43,
+    "gn": 0,
+    "ln": 0
+   }
+  },
+  "egeunet": {
+   "dep": {
+    "bn": 0,
+    "gn": 10,
+    "ln": 0
+   },
+   "n_folded": 0,
+   "params_inf_dep": 53374,
+   "params_inf_train": 53374,
+   "train": {
+    "bn": 0,
+    "gn": 10,
+    "ln": 0
+   }
+  },
+  "lbunet": {
+   "dep": {
+    "bn": 3,
+    "gn": 10,
+    "ln": 0
+   },
+   "n_folded": 2,
+   "params_inf_dep": 55769,
+   "params_inf_train": 55865,
+   "train": {
+    "bn": 5,
+    "gn": 10,
+    "ln": 0
+   }
+  },
+  "malunet": {
+   "dep": {
+    "bn": 0,
+    "gn": 40,
+    "ln": 0
+   },
+   "n_folded": 0,
+   "params_inf_dep": 177943,
+   "params_inf_train": 177943,
+   "train": {
+    "bn": 0,
+    "gn": 40,
+    "ln": 0
+   }
+  },
+  "maresunet": {
+   "dep": {
+    "bn": 0,
+    "gn": 0,
+    "ln": 0
+   },
+   "n_folded": 48,
+   "params_inf_dep": 26264569,
+   "params_inf_train": 26275065,
+   "train": {
+    "bn": 48,
+    "gn": 0,
+    "ln": 0
+   }
+  },
+  "mhorunet": {
+   "dep": {
+    "bn": 0,
+    "gn": 10,
+    "ln": 0
+   },
+   "n_folded": 0,
+   "params_inf_dep": 4962159,
+   "params_inf_train": 4962159,
+   "train": {
+    "bn": 0,
+    "gn": 10,
+    "ln": 0
+   }
+  },
+  "mk_unet": {
+   "dep": {
+    "bn": 0,
+    "gn": 0,
+    "ln": 0
+   },
+   "n_folded": 62,
+   "params_inf_dep": 309918,
+   "params_inf_train": 315566,
+   "train": {
+    "bn": 62,
+    "gn": 0,
+    "ln": 0
+   }
+  },
+  "pbe": {
+   "dep": {
+    "bn": 0,
+    "gn": 0,
+    "ln": 0
+   },
+   "n_folded": "fuse_pbe",
+   "params_inf_dep": 1318081,
+   "params_inf_train": 1334337,
+   "train": {
+    "bn": 33,
+    "gn": 0,
+    "ln": 0
+   }
+  },
+  "tinyunet": {
+   "dep": {
+    "bn": 0,
+    "gn": 0,
+    "ln": 0
+   },
+   "n_folded": 72,
+   "params_inf_dep": 478105,
+   "params_inf_train": 481105,
+   "train": {
+    "bn": 72,
+    "gn": 0,
+    "ln": 0
+   }
+  },
+  "ucmnet": {
+   "dep": {
+    "bn": 0,
+    "gn": 6,
+    "ln": 25
+   },
+   "n_folded": 0,
+   "params_inf_dep": 47436,
+   "params_inf_train": 47436,
+   "train": {
+    "bn": 0,
+    "gn": 6,
+    "ln": 25
+   }
+  },
+  "utanet": {
+   "dep": {
+    "bn": 1,
+    "gn": 0,
+    "ln": 0
+   },
+   "n_folded": 45,
+   "params_inf_dep": 24064777,
+   "params_inf_train": 24075305,
+   "train": {
+    "bn": 46,
+    "gn": 0,
+    "ln": 0
+   }
+  }
+ },
+ "old_failed_txt_runs": {
+  "egeunet__kvasir__k2": {
+   "abs_diff": 4.152221334541295e-07,
+   "best_val_iou_stored": 0.6105406912993864,
+   "ckpt_sha_match_local_copy": true,
+   "included": true,
+   "results_sha_match_table1_copy": true,
+   "val_iou_reeval": 0.6105411065215198
+  },
+  "egeunet__kvasir__k3": {
+   "abs_diff": 1.594362295742613e-06,
+   "best_val_iou_stored": 0.5956724856603564,
+   "ckpt_sha_match_local_copy": true,
+   "included": true,
+   "results_sha_match_table1_copy": true,
+   "val_iou_reeval": 0.5956708912980606
+  },
+  "malunet__isic18__k4": {
+   "abs_diff": 0.017148822896529414,
+   "best_val_iou_stored": 0.8220728361468267,
+   "ckpt_sha_match_local_copy": true,
+   "included": false,
+   "results_sha_match_table1_copy": true,
+   "val_iou_reeval": 0.8049240132502973
+  },
+  "mhorunet__isic18__k3": {
+   "abs_diff": 7.930263870026266e-07,
+   "best_val_iou_stored": 0.8190431956429054,
+   "ckpt_sha_match_local_copy": true,
+   "included": true,
+   "results_sha_match_table1_copy": true,
+   "val_iou_reeval": 0.8190439886692924
+  },
+  "tinyunet__kvasir__k4": {
+   "abs_diff": 1.144659059060249e-05,
+   "best_val_iou_stored": 0.7754971648149391,
+   "ckpt_sha_match_local_copy": true,
+   "included": true,
+   "results_sha_match_table1_copy": true,
+   "val_iou_reeval": 0.7755086114055297
+  },
+  "utanet__isic17__k3": {
+   "abs_diff": 5.487569138873383e-06,
+   "best_val_iou_stored": 0.8209767668856258,
+   "ckpt_sha_match_local_copy": true,
+   "included": true,
+   "results_sha_match_table1_copy": true,
+   "val_iou_reeval": 0.820971279316487
+  }
+ },
+ "table_i": {
+  "L80": {
+   "D": {
+    "all": "80/198",
+    "baseline": "70/180",
+    "by_setting": {
+     "D_a6": 16,
+     "D_l50": 55,
+     "D_w4": 9
+    },
+    "ckpt_level": "398/987",
+    "collapsed_cells": [
+     "cmunext|PH2|D_l50",
+     "cmunext|cvc|D_a6",
+     "cmunext|cvc|D_l50",
+     "cmunext|cvc|D_w4",
+     "cmunext|etis|D_a6",
+     "cmunext|etis|D_l50",
+     "cmunext|etis|D_w4",
+     "cmunext|isic17|D_l50",
+     "cmunext|isic18|D_l50",
+     "cmunext|kvasir|D_a6",
+     "cmunext|kvasir|D_l50",
+     "egeunet|PH2|D_l50",
+     "egeunet|cvc|D_l50",
+     "egeunet|etis|D_l50",
+     "egeunet|etis|D_w4",
+     "egeunet|isic17|D_l50",
+     "egeunet|isic18|D_l50",
+     "egeunet|kvasir|D_l50",
+     "lbunet|PH2|D_l50",
+     "lbunet|cvc|D_l50",
+     "lbunet|cvc|D_w4",
+     "lbunet|etis|D_l50",
+     "lbunet|etis|D_w4",
+     "lbunet|isic17|D_l50",
+     "lbunet|isic18|D_l50",
+     "lbunet|kvasir|D_l50",
+     "malunet|cvc|D_l50",
+     "malunet|etis|D_l50",
+     "malunet|kvasir|D_l50",
+     "maresunet|PH2|D_a6",
+     "maresunet|cvc|D_a6",
+     "maresunet|etis|D_a6",
+     "maresunet|etis|D_l50",
+     "maresunet|isic17|D_a6",
+     "maresunet|isic18|D_a6",
+     "maresunet|kvasir|D_a6",
+     "mhorunet|PH2|D_l50",
+     "mhorunet|cvc|D_l50",
+     "mhorunet|etis|D_l50",
+     "mhorunet|etis|D_w4",
+     "mhorunet|kvasir|D_l50",
+     "mk_unet|PH2|D_l50",
+     "mk_unet|cvc|D_l50",
+     "mk_unet|etis|D_l50",
+     "mk_unet|isic17|D_l50",
+     "mk_unet|kvasir|D_l50",
+     "pbe|PH2|D_l50",
+     "pbe|cvc|D_a6",
+     "pbe|cvc|D_l50",
+     "pbe|etis|D_a6",
+     "pbe|etis|D_l50",
+     "pbe|etis|D_w4",
+     "pbe|isic17|D_l50",
+     "pbe|isic18|D_l50",
+     "pbe|kvasir|D_a6",
+     "pbe|kvasir|D_l50",
+     "tinyunet|PH2|D_l50",
+     "tinyunet|cvc|D_a6",
+     "tinyunet|cvc|D_l50",
+     "tinyunet|etis|D_a6",
+     "tinyunet|etis|D_l50",
+     "tinyunet|etis|D_w4",
+     "tinyunet|isic17|D_l50",
+     "tinyunet|isic18|D_l50",
+     "tinyunet|kvasir|D_a6",
+     "tinyunet|kvasir|D_l50",
+     "ucmnet|PH2|D_l50",
+     "ucmnet|cvc|D_l50",
+     "ucmnet|etis|D_a6",
+     "ucmnet|etis|D_l50",
+     "ucmnet|isic17|D_l50",
+     "ucmnet|isic18|D_l50",
+     "ucmnet|kvasir|D_l50",
+     "utanet|PH2|D_l50",
+     "utanet|cvc|D_l50",
+     "utanet|etis|D_l50",
+     "utanet|etis|D_w4",
+     "utanet|isic17|D_l50",
+     "utanet|isic18|D_l50",
+     "utanet|kvasir|D_l50"
+    ],
+    "den_all": 198,
+    "den_pbe": 18,
+    "n_all": 80,
+    "n_pbe": 10,
+    "pbe": "10/18",
+    "pbe_by_setting": {
+     "D_a6": 3,
+     "D_l50": 6,
+     "D_w4": 1
+    },
+    "pbe_partial": false
+   },
+   "O": {
+    "all": "102/198",
+    "baseline": "84/180",
+    "by_setting": {
+     "O_a6": 22,
+     "O_l50": 55,
+     "O_w4": 25
+    },
+    "ckpt_level": "477/987",
+    "collapsed_cells": [
+     "cmunext|PH2|O_l50",
+     "cmunext|cvc|O_a6",
+     "cmunext|cvc|O_l50",
+     "cmunext|cvc|O_w4",
+     "cmunext|etis|O_a6",
+     "cmunext|etis|O_l50",
+     "cmunext|etis|O_w4",
+     "cmunext|isic17|O_l50",
+     "cmunext|isic18|O_l50",
+     "cmunext|kvasir|O_a6",
+     "cmunext|kvasir|O_l50",
+     "egeunet|PH2|O_l50",
+     "egeunet|cvc|O_l50",
+     "egeunet|cvc|O_w4",
+     "egeunet|etis|O_l50",
+     "egeunet|etis|O_w4",
+     "egeunet|isic17|O_l50",
+     "egeunet|isic18|O_l50",
+     "egeunet|kvasir|O_l50",
+     "egeunet|kvasir|O_w4",
+     "lbunet|PH2|O_l50",
+     "lbunet|PH2|O_w4",
+     "lbunet|cvc|O_l50",
+     "lbunet|cvc|O_w4",
+     "lbunet|etis|O_l50",
+     "lbunet|etis|O_w4",
+     "lbunet|isic17|O_l50",
+     "lbunet|isic18|O_l50",
+     "lbunet|kvasir|O_l50",
+     "malunet|cvc|O_l50",
+     "malunet|cvc|O_w4",
+     "malunet|etis|O_l50",
+     "malunet|etis|O_w4",
+     "malunet|kvasir|O_l50",
+     "maresunet|PH2|O_a6",
+     "maresunet|cvc|O_a6",
+     "maresunet|etis|O_a6",
+     "maresunet|etis|O_l50",
+     "maresunet|etis|O_w4",
+     "maresunet|isic17|O_a6",
+     "maresunet|isic18|O_a6",
+     "maresunet|kvasir|O_a6",
+     "mhorunet|PH2|O_l50",
+     "mhorunet|cvc|O_l50",
+     "mhorunet|cvc|O_w4",
+     "mhorunet|etis|O_l50",
+     "mhorunet|etis|O_w4",
+     "mhorunet|kvasir|O_l50",
+     "mk_unet|PH2|O_l50",
+     "mk_unet|cvc|O_l50",
+     "mk_unet|etis|O_a6",
+     "mk_unet|etis|O_l50",
+     "mk_unet|etis|O_w4",
+     "mk_unet|isic17|O_l50",
+     "mk_unet|kvasir|O_l50",
+     "pbe|PH2|O_a6",
+     "pbe|PH2|O_l50",
+     "pbe|PH2|O_w4",
+     "pbe|cvc|O_a6",
+     "pbe|cvc|O_l50",
+     "pbe|cvc|O_w4",
+     "pbe|etis|O_a6",
+     "pbe|etis|O_l50",
+     "pbe|etis|O_w4",
+     "pbe|isic17|O_a6",
+     "pbe|isic17|O_l50",
+     "pbe|isic17|O_w4",
+     "pbe|isic18|O_a6",
+     "pbe|isic18|O_l50",
+     "pbe|isic18|O_w4",
+     "pbe|kvasir|O_a6",
+     "pbe|kvasir|O_l50",
+     "pbe|kvasir|O_w4",
+     "tinyunet|PH2|O_a6",
+     "tinyunet|PH2|O_l50",
+     "tinyunet|cvc|O_a6",
+     "tinyunet|cvc|O_l50",
+     "tinyunet|cvc|O_w4",
+     "tinyunet|etis|O_a6",
+     "tinyunet|etis|O_l50",
+     "tinyunet|etis|O_w4",
+     "tinyunet|isic17|O_l50",
+     "tinyunet|isic18|O_l50",
+     "tinyunet|kvasir|O_a6",
+     "tinyunet|kvasir|O_l50",
+     "tinyunet|kvasir|O_w4",
+     "ucmnet|PH2|O_l50",
+     "ucmnet|cvc|O_l50",
+     "ucmnet|etis|O_a6",
+     "ucmnet|etis|O_l50",
+     "ucmnet|etis|O_w4",
+     "ucmnet|isic17|O_l50",
+     "ucmnet|isic18|O_l50",
+     "ucmnet|kvasir|O_l50",
+     "utanet|PH2|O_l50",
+     "utanet|cvc|O_l50",
+     "utanet|etis|O_a6",
+     "utanet|etis|O_l50",
+     "utanet|etis|O_w4",
+     "utanet|isic17|O_l50",
+     "utanet|isic18|O_l50",
+     "utanet|kvasir|O_l50"
+    ],
+    "den_all": 198,
+    "den_pbe": 18,
+    "n_all": 102,
+    "n_pbe": 18,
+    "pbe": "18/18",
+    "pbe_by_setting": {
+     "O_a6": 6,
+     "O_l50": 6,
+     "O_w4": 6
+    },
+    "pbe_partial": false
+   },
+   "S_a6c": {
+    "all": "6/66",
+    "baseline": "6/60",
+    "by_setting": {
+     "S_a6c": 6
+    },
+    "ckpt_level": "20/329",
+    "collapsed_cells": [
+     "cmunext|etis|S_a6c",
+     "maresunet|cvc|S_a6c",
+     "maresunet|isic17|S_a6c",
+     "maresunet|isic18|S_a6c",
+     "maresunet|kvasir|S_a6c",
+     "tinyunet|etis|S_a6c"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 6,
+    "n_pbe": 0,
+    "pbe": "0/6",
+    "pbe_by_setting": {
+     "S_a6c": 0
+    },
+    "pbe_partial": false
+   },
+   "S_l50c": {
+    "all": "57/66",
+    "baseline": "51/60",
+    "by_setting": {
+     "S_l50c": 57
+    },
+    "ckpt_level": "266/329",
+    "collapsed_cells": [
+     "cmunext|PH2|S_l50c",
+     "cmunext|cvc|S_l50c",
+     "cmunext|etis|S_l50c",
+     "cmunext|isic17|S_l50c",
+     "cmunext|isic18|S_l50c",
+     "cmunext|kvasir|S_l50c",
+     "egeunet|PH2|S_l50c",
+     "egeunet|cvc|S_l50c",
+     "egeunet|etis|S_l50c",
+     "egeunet|isic17|S_l50c",
+     "egeunet|isic18|S_l50c",
+     "egeunet|kvasir|S_l50c",
+     "lbunet|PH2|S_l50c",
+     "lbunet|cvc|S_l50c",
+     "lbunet|etis|S_l50c",
+     "lbunet|isic17|S_l50c",
+     "lbunet|isic18|S_l50c",
+     "lbunet|kvasir|S_l50c",
+     "malunet|PH2|S_l50c",
+     "malunet|cvc|S_l50c",
+     "malunet|etis|S_l50c",
+     "malunet|kvasir|S_l50c",
+     "maresunet|cvc|S_l50c",
+     "maresunet|etis|S_l50c",
+     "mhorunet|PH2|S_l50c",
+     "mhorunet|cvc|S_l50c",
+     "mhorunet|etis|S_l50c",
+     "mhorunet|kvasir|S_l50c",
+     "mk_unet|PH2|S_l50c",
+     "mk_unet|cvc|S_l50c",
+     "mk_unet|etis|S_l50c",
+     "mk_unet|isic17|S_l50c",
+     "mk_unet|kvasir|S_l50c",
+     "pbe|PH2|S_l50c",
+     "pbe|cvc|S_l50c",
+     "pbe|etis|S_l50c",
+     "pbe|isic17|S_l50c",
+     "pbe|isic18|S_l50c",
+     "pbe|kvasir|S_l50c",
+     "tinyunet|PH2|S_l50c",
+     "tinyunet|cvc|S_l50c",
+     "tinyunet|etis|S_l50c",
+     "tinyunet|isic17|S_l50c",
+     "tinyunet|isic18|S_l50c",
+     "tinyunet|kvasir|S_l50c",
+     "ucmnet|PH2|S_l50c",
+     "ucmnet|cvc|S_l50c",
+     "ucmnet|etis|S_l50c",
+     "ucmnet|isic17|S_l50c",
+     "ucmnet|isic18|S_l50c",
+     "ucmnet|kvasir|S_l50c",
+     "utanet|PH2|S_l50c",
+     "utanet|cvc|S_l50c",
+     "utanet|etis|S_l50c",
+     "utanet|isic17|S_l50c",
+     "utanet|isic18|S_l50c",
+     "utanet|kvasir|S_l50c"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 57,
+    "n_pbe": 6,
+    "pbe": "6/6",
+    "pbe_by_setting": {
+     "S_l50c": 6
+    },
+    "pbe_partial": false
+   },
+   "S_w4c": {
+    "all": "9/66",
+    "baseline": "8/60",
+    "by_setting": {
+     "S_w4c": 9
+    },
+    "ckpt_level": "46/329",
+    "collapsed_cells": [
+     "cmunext|cvc|S_w4c",
+     "cmunext|etis|S_w4c",
+     "egeunet|etis|S_w4c",
+     "lbunet|cvc|S_w4c",
+     "lbunet|etis|S_w4c",
+     "mhorunet|etis|S_w4c",
+     "pbe|etis|S_w4c",
+     "tinyunet|etis|S_w4c",
+     "utanet|etis|S_w4c"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 9,
+    "n_pbe": 1,
+    "pbe": "1/6",
+    "pbe_by_setting": {
+     "S_w4c": 1
+    },
+    "pbe_partial": false
+   },
+   "S_w4g": {
+    "all": "38/66",
+    "baseline": "32/60",
+    "by_setting": {
+     "S_w4g": 38
+    },
+    "ckpt_level": "159/329",
+    "collapsed_cells": [
+     "cmunext|PH2|S_w4g",
+     "cmunext|cvc|S_w4g",
+     "cmunext|etis|S_w4g",
+     "cmunext|isic18|S_w4g",
+     "cmunext|kvasir|S_w4g",
+     "egeunet|cvc|S_w4g",
+     "egeunet|etis|S_w4g",
+     "egeunet|kvasir|S_w4g",
+     "lbunet|PH2|S_w4g",
+     "lbunet|cvc|S_w4g",
+     "lbunet|etis|S_w4g",
+     "malunet|cvc|S_w4g",
+     "malunet|etis|S_w4g",
+     "maresunet|etis|S_w4g",
+     "maresunet|isic17|S_w4g",
+     "maresunet|isic18|S_w4g",
+     "mhorunet|cvc|S_w4g",
+     "mhorunet|etis|S_w4g",
+     "mk_unet|etis|S_w4g",
+     "mk_unet|kvasir|S_w4g",
+     "pbe|PH2|S_w4g",
+     "pbe|cvc|S_w4g",
+     "pbe|etis|S_w4g",
+     "pbe|isic17|S_w4g",
+     "pbe|isic18|S_w4g",
+     "pbe|kvasir|S_w4g",
+     "tinyunet|PH2|S_w4g",
+     "tinyunet|cvc|S_w4g",
+     "tinyunet|etis|S_w4g",
+     "tinyunet|isic17|S_w4g",
+     "tinyunet|kvasir|S_w4g",
+     "ucmnet|etis|S_w4g",
+     "utanet|PH2|S_w4g",
+     "utanet|cvc|S_w4g",
+     "utanet|etis|S_w4g",
+     "utanet|isic17|S_w4g",
+     "utanet|isic18|S_w4g",
+     "utanet|kvasir|S_w4g"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 38,
+    "n_pbe": 6,
+    "pbe": "6/6",
+    "pbe_by_setting": {
+     "S_w4g": 6
+    },
+    "pbe_partial": false
+   }
+  },
+  "L90": {
+   "D": {
+    "all": "107/198",
+    "baseline": "95/180",
+    "by_setting": {
+     "D_a6": 23,
+     "D_l50": 61,
+     "D_w4": 23
+    },
+    "ckpt_level": "490/987",
+    "collapsed_cells": [
+     "cmunext|PH2|D_l50",
+     "cmunext|cvc|D_a6",
+     "cmunext|cvc|D_l50",
+     "cmunext|cvc|D_w4",
+     "cmunext|etis|D_a6",
+     "cmunext|etis|D_l50",
+     "cmunext|etis|D_w4",
+     "cmunext|isic17|D_a6",
+     "cmunext|isic17|D_l50",
+     "cmunext|isic18|D_l50",
+     "cmunext|kvasir|D_a6",
+     "cmunext|kvasir|D_l50",
+     "cmunext|kvasir|D_w4",
+     "egeunet|PH2|D_l50",
+     "egeunet|cvc|D_l50",
+     "egeunet|cvc|D_w4",
+     "egeunet|etis|D_a6",
+     "egeunet|etis|D_l50",
+     "egeunet|etis|D_w4",
+     "egeunet|isic17|D_l50",
+     "egeunet|isic18|D_l50",
+     "egeunet|kvasir|D_l50",
+     "egeunet|kvasir|D_w4",
+     "lbunet|PH2|D_l50",
+     "lbunet|PH2|D_w4",
+     "lbunet|cvc|D_l50",
+     "lbunet|cvc|D_w4",
+     "lbunet|etis|D_a6",
+     "lbunet|etis|D_l50",
+     "lbunet|etis|D_w4",
+     "lbunet|isic17|D_l50",
+     "lbunet|isic18|D_l50",
+     "lbunet|kvasir|D_l50",
+     "malunet|PH2|D_l50",
+     "malunet|cvc|D_l50",
+     "malunet|cvc|D_w4",
+     "malunet|etis|D_l50",
+     "malunet|etis|D_w4",
+     "malunet|isic17|D_l50",
+     "malunet|isic18|D_l50",
+     "malunet|kvasir|D_l50",
+     "maresunet|PH2|D_a6",
+     "maresunet|cvc|D_a6",
+     "maresunet|cvc|D_l50",
+     "maresunet|etis|D_a6",
+     "maresunet|etis|D_l50",
+     "maresunet|etis|D_w4",
+     "maresunet|isic17|D_a6",
+     "maresunet|isic18|D_a6",
+     "maresunet|kvasir|D_a6",
+     "maresunet|kvasir|D_l50",
+     "mhorunet|PH2|D_l50",
+     "mhorunet|cvc|D_l50",
+     "mhorunet|cvc|D_w4",
+     "mhorunet|etis|D_a6",
+     "mhorunet|etis|D_l50",
+     "mhorunet|etis|D_w4",
+     "mhorunet|kvasir|D_l50",
+     "mk_unet|PH2|D_l50",
+     "mk_unet|cvc|D_l50",
+     "mk_unet|cvc|D_w4",
+     "mk_unet|etis|D_l50",
+     "mk_unet|etis|D_w4",
+     "mk_unet|isic17|D_l50",
+     "mk_unet|isic18|D_l50",
+     "mk_unet|kvasir|D_l50",
+     "pbe|PH2|D_l50",
+     "pbe|cvc|D_a6",
+     "pbe|cvc|D_l50",
+     "pbe|etis|D_a6",
+     "pbe|etis|D_l50",
+     "pbe|etis|D_w4",
+     "pbe|isic17|D_a6",
+     "pbe|isic17|D_l50",
+     "pbe|isic18|D_l50",
+     "pbe|kvasir|D_a6",
+     "pbe|kvasir|D_l50",
+     "pbe|kvasir|D_w4",
+     "tinyunet|PH2|D_a6",
+     "tinyunet|PH2|D_l50",
+     "tinyunet|cvc|D_a6",
+     "tinyunet|cvc|D_l50",
+     "tinyunet|cvc|D_w4",
+     "tinyunet|etis|D_a6",
+     "tinyunet|etis|D_l50",
+     "tinyunet|etis|D_w4",
+     "tinyunet|isic17|D_l50",
+     "tinyunet|isic18|D_l50",
+     "tinyunet|kvasir|D_a6",
+     "tinyunet|kvasir|D_l50",
+     "ucmnet|PH2|D_l50",
+     "ucmnet|cvc|D_a6",
+     "ucmnet|cvc|D_l50",
+     "ucmnet|cvc|D_w4",
+     "ucmnet|etis|D_a6",
+     "ucmnet|etis|D_l50",
+     "ucmnet|etis|D_w4",
+     "ucmnet|isic17|D_l50",
+     "ucmnet|isic18|D_l50",
+     "ucmnet|kvasir|D_l50",
+     "utanet|PH2|D_l50",
+     "utanet|cvc|D_l50",
+     "utanet|etis|D_l50",
+     "utanet|etis|D_w4",
+     "utanet|isic17|D_l50",
+     "utanet|isic18|D_l50",
+     "utanet|kvasir|D_l50"
+    ],
+    "den_all": 198,
+    "den_pbe": 18,
+    "n_all": 107,
+    "n_pbe": 12,
+    "pbe": "12/18",
+    "pbe_by_setting": {
+     "D_a6": 4,
+     "D_l50": 6,
+     "D_w4": 2
+    },
+    "pbe_partial": false
+   },
+   "O": {
+    "all": "122/198",
+    "baseline": "104/180",
+    "by_setting": {
+     "O_a6": 30,
+     "O_l50": 60,
+     "O_w4": 32
+    },
+    "ckpt_level": "584/987",
+    "collapsed_cells": [
+     "cmunext|PH2|O_l50",
+     "cmunext|cvc|O_a6",
+     "cmunext|cvc|O_l50",
+     "cmunext|cvc|O_w4",
+     "cmunext|etis|O_a6",
+     "cmunext|etis|O_l50",
+     "cmunext|etis|O_w4",
+     "cmunext|isic17|O_a6",
+     "cmunext|isic17|O_l50",
+     "cmunext|isic18|O_l50",
+     "cmunext|kvasir|O_a6",
+     "cmunext|kvasir|O_l50",
+     "cmunext|kvasir|O_w4",
+     "egeunet|PH2|O_l50",
+     "egeunet|PH2|O_w4",
+     "egeunet|cvc|O_l50",
+     "egeunet|cvc|O_w4",
+     "egeunet|etis|O_a6",
+     "egeunet|etis|O_l50",
+     "egeunet|etis|O_w4",
+     "egeunet|isic17|O_l50",
+     "egeunet|isic18|O_l50",
+     "egeunet|kvasir|O_l50",
+     "egeunet|kvasir|O_w4",
+     "lbunet|PH2|O_l50",
+     "lbunet|PH2|O_w4",
+     "lbunet|cvc|O_l50",
+     "lbunet|cvc|O_w4",
+     "lbunet|etis|O_a6",
+     "lbunet|etis|O_l50",
+     "lbunet|etis|O_w4",
+     "lbunet|isic17|O_l50",
+     "lbunet|isic18|O_l50",
+     "lbunet|kvasir|O_l50",
+     "lbunet|kvasir|O_w4",
+     "malunet|PH2|O_l50",
+     "malunet|cvc|O_l50",
+     "malunet|cvc|O_w4",
+     "malunet|etis|O_l50",
+     "malunet|etis|O_w4",
+     "malunet|isic17|O_l50",
+     "malunet|isic18|O_l50",
+     "malunet|kvasir|O_l50",
+     "maresunet|PH2|O_a6",
+     "maresunet|cvc|O_a6",
+     "maresunet|cvc|O_l50",
+     "maresunet|etis|O_a6",
+     "maresunet|etis|O_l50",
+     "maresunet|etis|O_w4",
+     "maresunet|isic17|O_a6",
+     "maresunet|isic18|O_a6",
+     "maresunet|kvasir|O_a6",
+     "mhorunet|PH2|O_l50",
+     "mhorunet|cvc|O_l50",
+     "mhorunet|cvc|O_w4",
+     "mhorunet|etis|O_a6",
+     "mhorunet|etis|O_l50",
+     "mhorunet|etis|O_w4",
+     "mhorunet|kvasir|O_l50",
+     "mk_unet|PH2|O_l50",
+     "mk_unet|cvc|O_a6",
+     "mk_unet|cvc|O_l50",
+     "mk_unet|cvc|O_w4",
+     "mk_unet|etis|O_a6",
+     "mk_unet|etis|O_l50",
+     "mk_unet|etis|O_w4",
+     "mk_unet|isic17|O_l50",
+     "mk_unet|isic18|O_l50",
+     "mk_unet|kvasir|O_l50",
+     "pbe|PH2|O_a6",
+     "pbe|PH2|O_l50",
+     "pbe|PH2|O_w4",
+     "pbe|cvc|O_a6",
+     "pbe|cvc|O_l50",
+     "pbe|cvc|O_w4",
+     "pbe|etis|O_a6",
+     "pbe|etis|O_l50",
+     "pbe|etis|O_w4",
+     "pbe|isic17|O_a6",
+     "pbe|isic17|O_l50",
+     "pbe|isic17|O_w4",
+     "pbe|isic18|O_a6",
+     "pbe|isic18|O_l50",
+     "pbe|isic18|O_w4",
+     "pbe|kvasir|O_a6",
+     "pbe|kvasir|O_l50",
+     "pbe|kvasir|O_w4",
+     "tinyunet|PH2|O_a6",
+     "tinyunet|PH2|O_l50",
+     "tinyunet|cvc|O_a6",
+     "tinyunet|cvc|O_l50",
+     "tinyunet|cvc|O_w4",
+     "tinyunet|etis|O_a6",
+     "tinyunet|etis|O_l50",
+     "tinyunet|etis|O_w4",
+     "tinyunet|isic17|O_a6",
+     "tinyunet|isic17|O_l50",
+     "tinyunet|isic17|O_w4",
+     "tinyunet|isic18|O_a6",
+     "tinyunet|isic18|O_l50",
+     "tinyunet|kvasir|O_a6",
+     "tinyunet|kvasir|O_l50",
+     "tinyunet|kvasir|O_w4",
+     "ucmnet|PH2|O_l50",
+     "ucmnet|cvc|O_a6",
+     "ucmnet|cvc|O_l50",
+     "ucmnet|cvc|O_w4",
+     "ucmnet|etis|O_a6",
+     "ucmnet|etis|O_l50",
+     "ucmnet|etis|O_w4",
+     "ucmnet|isic17|O_l50",
+     "ucmnet|isic18|O_l50",
+     "ucmnet|kvasir|O_l50",
+     "utanet|PH2|O_l50",
+     "utanet|cvc|O_l50",
+     "utanet|cvc|O_w4",
+     "utanet|etis|O_a6",
+     "utanet|etis|O_l50",
+     "utanet|etis|O_w4",
+     "utanet|isic17|O_l50",
+     "utanet|isic18|O_l50",
+     "utanet|kvasir|O_l50"
+    ],
+    "den_all": 198,
+    "den_pbe": 18,
+    "n_all": 122,
+    "n_pbe": 18,
+    "pbe": "18/18",
+    "pbe_by_setting": {
+     "O_a6": 6,
+     "O_l50": 6,
+     "O_w4": 6
+    },
+    "pbe_partial": false
+   },
+   "S_a6c": {
+    "all": "6/66",
+    "baseline": "6/60",
+    "by_setting": {
+     "S_a6c": 6
+    },
+    "ckpt_level": "26/329",
+    "collapsed_cells": [
+     "cmunext|etis|S_a6c",
+     "maresunet|cvc|S_a6c",
+     "maresunet|isic17|S_a6c",
+     "maresunet|isic18|S_a6c",
+     "maresunet|kvasir|S_a6c",
+     "tinyunet|etis|S_a6c"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 6,
+    "n_pbe": 0,
+    "pbe": "0/6",
+    "pbe_by_setting": {
+     "S_a6c": 0
+    },
+    "pbe_partial": false
+   },
+   "S_l50c": {
+    "all": "61/66",
+    "baseline": "55/60",
+    "by_setting": {
+     "S_l50c": 61
+    },
+    "ckpt_level": "293/329",
+    "collapsed_cells": [
+     "cmunext|PH2|S_l50c",
+     "cmunext|cvc|S_l50c",
+     "cmunext|etis|S_l50c",
+     "cmunext|isic17|S_l50c",
+     "cmunext|isic18|S_l50c",
+     "cmunext|kvasir|S_l50c",
+     "egeunet|PH2|S_l50c",
+     "egeunet|cvc|S_l50c",
+     "egeunet|etis|S_l50c",
+     "egeunet|isic17|S_l50c",
+     "egeunet|isic18|S_l50c",
+     "egeunet|kvasir|S_l50c",
+     "lbunet|PH2|S_l50c",
+     "lbunet|cvc|S_l50c",
+     "lbunet|etis|S_l50c",
+     "lbunet|isic17|S_l50c",
+     "lbunet|isic18|S_l50c",
+     "lbunet|kvasir|S_l50c",
+     "malunet|PH2|S_l50c",
+     "malunet|cvc|S_l50c",
+     "malunet|etis|S_l50c",
+     "malunet|isic17|S_l50c",
+     "malunet|isic18|S_l50c",
+     "malunet|kvasir|S_l50c",
+     "maresunet|cvc|S_l50c",
+     "maresunet|etis|S_l50c",
+     "maresunet|kvasir|S_l50c",
+     "mhorunet|PH2|S_l50c",
+     "mhorunet|cvc|S_l50c",
+     "mhorunet|etis|S_l50c",
+     "mhorunet|isic17|S_l50c",
+     "mhorunet|kvasir|S_l50c",
+     "mk_unet|PH2|S_l50c",
+     "mk_unet|cvc|S_l50c",
+     "mk_unet|etis|S_l50c",
+     "mk_unet|isic17|S_l50c",
+     "mk_unet|kvasir|S_l50c",
+     "pbe|PH2|S_l50c",
+     "pbe|cvc|S_l50c",
+     "pbe|etis|S_l50c",
+     "pbe|isic17|S_l50c",
+     "pbe|isic18|S_l50c",
+     "pbe|kvasir|S_l50c",
+     "tinyunet|PH2|S_l50c",
+     "tinyunet|cvc|S_l50c",
+     "tinyunet|etis|S_l50c",
+     "tinyunet|isic17|S_l50c",
+     "tinyunet|isic18|S_l50c",
+     "tinyunet|kvasir|S_l50c",
+     "ucmnet|PH2|S_l50c",
+     "ucmnet|cvc|S_l50c",
+     "ucmnet|etis|S_l50c",
+     "ucmnet|isic17|S_l50c",
+     "ucmnet|isic18|S_l50c",
+     "ucmnet|kvasir|S_l50c",
+     "utanet|PH2|S_l50c",
+     "utanet|cvc|S_l50c",
+     "utanet|etis|S_l50c",
+     "utanet|isic17|S_l50c",
+     "utanet|isic18|S_l50c",
+     "utanet|kvasir|S_l50c"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 61,
+    "n_pbe": 6,
+    "pbe": "6/6",
+    "pbe_by_setting": {
+     "S_l50c": 6
+    },
+    "pbe_partial": false
+   },
+   "S_w4c": {
+    "all": "22/66",
+    "baseline": "21/60",
+    "by_setting": {
+     "S_w4c": 22
+    },
+    "ckpt_level": "90/329",
+    "collapsed_cells": [
+     "cmunext|cvc|S_w4c",
+     "cmunext|etis|S_w4c",
+     "cmunext|kvasir|S_w4c",
+     "egeunet|cvc|S_w4c",
+     "egeunet|etis|S_w4c",
+     "egeunet|kvasir|S_w4c",
+     "lbunet|PH2|S_w4c",
+     "lbunet|cvc|S_w4c",
+     "lbunet|etis|S_w4c",
+     "malunet|cvc|S_w4c",
+     "malunet|etis|S_w4c",
+     "maresunet|etis|S_w4c",
+     "mhorunet|cvc|S_w4c",
+     "mhorunet|etis|S_w4c",
+     "mk_unet|cvc|S_w4c",
+     "mk_unet|etis|S_w4c",
+     "pbe|etis|S_w4c",
+     "tinyunet|cvc|S_w4c",
+     "tinyunet|etis|S_w4c",
+     "ucmnet|cvc|S_w4c",
+     "ucmnet|etis|S_w4c",
+     "utanet|etis|S_w4c"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 22,
+    "n_pbe": 1,
+    "pbe": "1/6",
+    "pbe_by_setting": {
+     "S_w4c": 1
+    },
+    "pbe_partial": false
+   },
+   "S_w4g": {
+    "all": "45/66",
+    "baseline": "39/60",
+    "by_setting": {
+     "S_w4g": 45
+    },
+    "ckpt_level": "205/329",
+    "collapsed_cells": [
+     "cmunext|PH2|S_w4g",
+     "cmunext|cvc|S_w4g",
+     "cmunext|etis|S_w4g",
+     "cmunext|isic17|S_w4g",
+     "cmunext|isic18|S_w4g",
+     "cmunext|kvasir|S_w4g",
+     "egeunet|PH2|S_w4g",
+     "egeunet|cvc|S_w4g",
+     "egeunet|etis|S_w4g",
+     "egeunet|kvasir|S_w4g",
+     "lbunet|PH2|S_w4g",
+     "lbunet|cvc|S_w4g",
+     "lbunet|etis|S_w4g",
+     "lbunet|kvasir|S_w4g",
+     "malunet|cvc|S_w4g",
+     "malunet|etis|S_w4g",
+     "maresunet|cvc|S_w4g",
+     "maresunet|etis|S_w4g",
+     "maresunet|isic17|S_w4g",
+     "maresunet|isic18|S_w4g",
+     "mhorunet|cvc|S_w4g",
+     "mhorunet|etis|S_w4g",
+     "mk_unet|cvc|S_w4g",
+     "mk_unet|etis|S_w4g",
+     "mk_unet|kvasir|S_w4g",
+     "pbe|PH2|S_w4g",
+     "pbe|cvc|S_w4g",
+     "pbe|etis|S_w4g",
+     "pbe|isic17|S_w4g",
+     "pbe|isic18|S_w4g",
+     "pbe|kvasir|S_w4g",
+     "tinyunet|PH2|S_w4g",
+     "tinyunet|cvc|S_w4g",
+     "tinyunet|etis|S_w4g",
+     "tinyunet|isic17|S_w4g",
+     "tinyunet|isic18|S_w4g",
+     "tinyunet|kvasir|S_w4g",
+     "ucmnet|cvc|S_w4g",
+     "ucmnet|etis|S_w4g",
+     "utanet|PH2|S_w4g",
+     "utanet|cvc|S_w4g",
+     "utanet|etis|S_w4g",
+     "utanet|isic17|S_w4g",
+     "utanet|isic18|S_w4g",
+     "utanet|kvasir|S_w4g"
+    ],
+    "den_all": 66,
+    "den_pbe": 6,
+    "n_all": 45,
+    "n_pbe": 6,
+    "pbe": "6/6",
+    "pbe_by_setting": {
+     "S_w4g": 6
+    },
+    "pbe_partial": false
+   }
+  }
+ },
+ "table_i_footnote": "Manuscript \"11/18\" (PBE-Net): queue10 k1 reference checkpoints (sha differs from the v1 runs), split 1 only, collapse = q IoU <= chance+0.05; not the label used here (5-split mean val-Dice retention < 0.8).",
+ "val_iou_reproduction_all": {
+  "max_abs_diff": 0.10896826152798633,
+  "n": 330,
+  "n_over_1e-3": 29
+ }
+}

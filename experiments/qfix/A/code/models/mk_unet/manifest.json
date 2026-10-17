@@ -1,0 +1,14 @@
+{
+ "model": "mk_unet",
+ "class": "MK_UNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/MK_UNet.py",
+  "sha256": "11c25ca612835b058b012689572340d020773440b87d478ebb4e2c2922a92ac1",
+  "copied_to": "src/MK_UNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

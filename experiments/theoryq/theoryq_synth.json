@@ -1,0 +1,56 @@
+{
+ "S1_planted_pt": {
+  "PASS": true,
+  "msg": "conv 3/16, convT 3/16 zeroed (planted 3; pre-existing zero channel not counted)"
+ },
+ "S2_threshold_code_vs_design": {
+  "PASS": true,
+  "msg": "code zeroes r/A in {0.0714, 0.0690, 0.0667, 0.0625}; design rule r < A/15 would zero only r/A=1/16 -> channels with r/A in (1/15, 1/14] are the discrepancy"
+ },
+ "S3_per_channel_zero": {
+  "PASS": true,
+  "msg": "planted tensors 0, 200 tensors with range ratio up to 1e6: 0 zeroed channels"
+ },
+ "S4_analytic_vs_code": {
+  "PASS": true,
+  "msg": "300 tensors, 0 mismatches between {0<r_c<=A/(2qm)} and the code"
+ },
+ "S5_Z_max_over_layers": {
+  "PASS": true,
+  "msg": "Z=0.3125 (5/16), Zglob=0.1667 (8/48), per-channel Z=0.0"
+ },
+ "S6_pruned_energy": {
+  "PASS": true,
+  "msg": "linear magnitudes m=0.125187 (analytic 0.125187), flat 0.4997 > linear > heavy-tail 0.0081; Mstat picks flat; E=1.1508"
+ },
+ "S7_m_ranks_planted": {
+  "PASS": true,
+  "msg": "Mstat over 5 planted checkpoints ['0.0020', '0.0313', '0.1252', '0.2502', '0.3538'] (analytic ['0.0020', '0.0313', '0.1252', '0.2502', '0.3538'], max err 7.2e-10), Spearman 1.000"
+ },
+ "S8_auc_cells": {
+  "PASS": true,
+  "msg": "perfect 1.000, reversed 0.000, random mean over 200 = 0.501 (range 0.301-0.656), all-tied 0.50; perfect boot CI [1.0, 1.0] p=0.0005; random boot CI [0.339, 0.631] p=0.606"
+ },
+ "S9_cell_stat": {
+  "PASS": true,
+  "msg": "mean a=0.20 b(4 splits)=0.20, max b=0.50"
+ },
+ "S10_holm": {
+  "PASS": true,
+  "msg": "p (0.01, 0.04) -> {'T1': (0.02, True), 'T3': (0.04, True)}; p (0.03, 0.20) -> {'T1': (0.06, False), 'T3': (0.2, False)}"
+ },
+ "S11_prop3_bound_toy_dag": {
+  "PASS": true,
+  "msg": "conv op norm 3.495 <= sqrt(9)||K||_F 14.547; ||f-f~|| <= P_out ||x|| sum sqrt(m_l) on 50 inputs, max ratio lhs/rhs = 1.07e-05 (bound loose)"
+ },
+ "S12_harmless_bn_channels": {
+  "PASS": true,
+  "msg": "switched-off BN channels 3 (gamma 1e-4, 0, 2.9e-3 <= 3e-3; 3.1e-3 kept); harmless after fold [2, 6] (gamma=0 channel already zero, not counted); original untouched"
+ },
+ "S13_executed_rule": {
+  "PASS": true,
+  "msg": "autograd used=['a.bias', 'a.weight', 'scale']; union with hook-executed leaf adds ['unused.bias', 'unused.weight']; grads cleared"
+ },
+ "ALL_PASS": true,
+ "torch": "2.0.1+cu118"
+}

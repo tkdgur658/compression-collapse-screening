@@ -1,0 +1,23 @@
+{
+ "s1_ebpb": 0.153092096,
+ "s1_mbv2_t0.5": 2.357198848,
+ "s1_mbv2_t_min(h=8)": 0.353370112,
+ "s1_mbv2_h2(unclamped,hypothetical)": 0.138674176,
+ "s1_mbv2_h4(unclamped,hypothetical)": 0.210239488,
+ "s1_mbv2_h6(unclamped,hypothetical)": 0.2818048,
+ "s1_mbv2_h8(unclamped,hypothetical)": 0.353370112,
+ "s2_ebpb": 0.08257536,
+ "s2_mbv2_t0.5": 1.286602752,
+ "s2_mbv2_t_min(h=8)": 0.130285568,
+ "s2_mbv2_h2(unclamped,hypothetical)": 0.05144576,
+ "s2_mbv2_h4(unclamped,hypothetical)": 0.077725696,
+ "s2_mbv2_h6(unclamped,hypothetical)": 0.104005632,
+ "s2_mbv2_h8(unclamped,hypothetical)": 0.130285568,
+ "net_ebpb_gflops": 3.370293248,
+ "net_ebpb_params_inference": 1334337,
+ "net_mbv2_gflops": 6.778427392,
+ "net_mbv2_params_inference": 1332897,
+ "blocks_ebpb_sum": 0.235667456,
+ "blocks_mbv2_sum": 3.6438015999999998,
+ "blocks_mbv2_min_sum": 0.48365568000000003
+}

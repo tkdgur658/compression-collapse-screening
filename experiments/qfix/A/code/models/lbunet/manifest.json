@@ -1,0 +1,14 @@
+{
+ "model": "lbunet",
+ "class": "LBUNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/LBUNet.py",
+  "sha256": "61ff2ba8d5172f27eec8603565a087cdfbc1605b12ebee8b2ccac73df66d3ed6",
+  "copied_to": "src/LBUNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

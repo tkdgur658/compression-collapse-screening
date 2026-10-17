@@ -1,0 +1,128 @@
+{
+ "prereg": "PREREG_JETSON.md (6afdf445) + PREREG_JETSON_AMENDMENT1.md (26804274)",
+ "run": "a1",
+ "precision": "FP16",
+ "clocks": "fixed by the user with jetson_clocks (CPU 1479 MHz x4, GPU 921.6 MHz, EMC 1600 MHz, MAXN)",
+ "models": {
+  "pbe": {
+   "display": "PBE-Net",
+   "status_line": "KEEP a1",
+   "status": "measured",
+   "attempt": "a1",
+   "n_timed": 50,
+   "median_ms": 108.56299999999999,
+   "iqr_ms": 0.4927499999999867,
+   "min_ms": 107.957,
+   "max_ms": 109.127,
+   "clocks": [
+    "before_t=1792153556.407625573 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "before_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=51000,48000,44500,43000,50000,45750,",
+    "after_t=1792153569.172718620 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "after_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=52500,49000,46000,44500,50000,49500,"
+   ],
+   "precond": "load1=0.10 tegrastats_samples=5 gr3d_nonzero=0",
+   "times_sha256": "c445e1c18f08e2daff9073944168ff2b5d7a042cec6423f03c8cd4989c12b878",
+   "engine_sha256": "79b617126c78f18ac58760c0d84369217633e6124ada538d093db0fb9a69c7fd"
+  },
+  "utanet": {
+   "display": "UTANet",
+   "status_line": "KEEP a1",
+   "status": "measured",
+   "attempt": "a1",
+   "n_timed": 50,
+   "median_ms": 98.52505,
+   "iqr_ms": 0.5925750000000107,
+   "min_ms": 97.3455,
+   "max_ms": 100.005,
+   "clocks": [
+    "before_t=1792153575.400276892 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "before_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=51500,49000,45500,44000,50000,46500,",
+    "after_t=1792153586.454543072 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "after_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=53000,50000,47000,45000,50000,49250,"
+   ],
+   "precond": "load1=0.13 tegrastats_samples=5 gr3d_nonzero=0",
+   "times_sha256": "462d052c35c5009cbff67f6526003f00f0b374e780ac29498d171f1a96141d93",
+   "engine_sha256": "f11dc9f3eedffe573cbf08e04f232093de560baab00d3204ee764295cfa6c3bf"
+  },
+  "mk_unet": {
+   "display": "MK-UNet",
+   "status_line": "KEEP a1",
+   "status": "measured",
+   "attempt": "a1",
+   "n_timed": 50,
+   "median_ms": 41.8462,
+   "iqr_ms": 0.27325000000000443,
+   "min_ms": 41.5564,
+   "max_ms": 42.4136,
+   "clocks": [
+    "before_t=1792153592.681282610 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "before_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=52500,49000,46500,44500,50000,47500,",
+    "after_t=1792153601.591766994 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "after_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=53500,50500,47500,45500,50000,50500,"
+   ],
+   "precond": "load1=0.10 tegrastats_samples=5 gr3d_nonzero=0",
+   "times_sha256": "1158ba881c2ccd17f0209d8a59264228a611ca36af0bd3dbba2f9921689a9065",
+   "engine_sha256": "901b63dbae7168b565fd3a03676d97b9dcba56344806ecd3f5e7d3a8acd4b29a"
+  },
+  "ucmnet": {
+   "display": "UCMNet",
+   "status_line": "KEEP a1",
+   "status": "measured",
+   "attempt": "a1",
+   "n_timed": 50,
+   "median_ms": 19.94225,
+   "iqr_ms": 0.23132499999999823,
+   "min_ms": 19.8591,
+   "max_ms": 30.4709,
+   "clocks": [
+    "before_t=1792153607.821794404 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "before_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=53000,49500,46500,45000,50000,47750,",
+    "after_t=1792153616.351920926 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "after_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=53500,50500,47500,46000,50000,51000,"
+   ],
+   "precond": "load1=0.22 tegrastats_samples=5 gr3d_nonzero=0",
+   "times_sha256": "521ed50b3c9af7b4e1f93fb554bec7ce5cd8db1c11fc8846a91b12c6d429ab40",
+   "engine_sha256": "0aa896139e4cc6003fd830fb34d739f030f076f6f187dde6cdef60a5f44f61d8"
+  },
+  "cmunext": {
+   "display": "CMUNeXt",
+   "status_line": "KEEP a1",
+   "status": "measured",
+   "attempt": "a1",
+   "n_timed": 50,
+   "median_ms": 43.3279,
+   "iqr_ms": 0.07287500000000335,
+   "min_ms": 43.2458,
+   "max_ms": 43.5183,
+   "clocks": [
+    "before_t=1792153622.582284748 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "before_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=53000,50500,47000,45000,50000,48250,",
+    "after_t=1792153631.455448414 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "after_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=54500,51000,48000,46000,50000,50000,"
+   ],
+   "precond": "load1=0.39 tegrastats_samples=5 gr3d_nonzero=0",
+   "times_sha256": "dbe5ecc6b10178de545c2ef61cf8ddc0064f5e0f45f0e468f4ebde9a3c8ea5d7",
+   "engine_sha256": "cc2188da8ff41ef98566a484baea507d627c644d6c54d959c97ff9804680bbd8"
+  },
+  "malunet": {
+   "display": "MALUNet",
+   "status_line": "KEEP a1",
+   "status": "measured",
+   "attempt": "a1",
+   "n_timed": 50,
+   "median_ms": 21.07835,
+   "iqr_ms": 0.4551000000000016,
+   "min_ms": 20.8362,
+   "max_ms": 31.2202,
+   "clocks": [
+    "before_t=1792153637.683323184 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "before_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=53500,50500,47500,45500,50000,48500,",
+    "after_t=1792153646.363751601 gpu_cur=921600000 gpu_min=921600000 gpu_max=921600000 gpu_gov=nvhost_podgov cpu_online=0-3 cpu0_cur=1479000 cpu1_cur=1479000 cpu2_cur=1479000 cpu3_cur=1479000 cpu0_min=1479000 cpu0_max=1479000 cpu0_gov=schedutil cpu1_min=1479000 cpu1_max=1479000 cpu1_gov=schedutil cpu2_min=1479000 cpu2_max=1479000 cpu2_gov=schedutil cpu3_min=1479000 cpu3_max=1479000 cpu3_gov=schedutil",
+    "after_extra gpu_target=921600000 emc_freq=not_readable_without_root emc_force_max_rate=N temps_mC=54500,51500,48000,46500,50000,50250,"
+   ],
+   "precond": "load1=0.37 tegrastats_samples=5 gr3d_nonzero=0",
+   "times_sha256": "caecf52570911243192fbba98b2ae145fd4c05e0dba006b40123bfa23b8750ba",
+   "engine_sha256": "70b246002586c3145bbba0c206e08fae1421ca42dcbdc68470626d0050195f4f"
+  }
+ }
+}

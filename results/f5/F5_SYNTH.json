@@ -1,0 +1,117 @@
+{
+ "R1": {
+  "0.7": {
+   "true_ratio": 0.6967764427637678,
+   "coverage": 0.995,
+   "classes": {
+    "preserved": 0,
+    "not preserved": 200,
+    "indeterminate": 0
+   }
+  },
+  "0.8": {
+   "true_ratio": 0.7963159345871633,
+   "coverage": 0.995,
+   "classes": {
+    "preserved": 1,
+    "not preserved": 1,
+    "indeterminate": 198
+   }
+  },
+  "1.0": {
+   "true_ratio": 0.9953949182339541,
+   "coverage": 0.995,
+   "classes": {
+    "preserved": 200,
+    "not preserved": 0,
+    "indeterminate": 0
+   }
+  }
+ },
+ "R2": {
+  "vessel_frac": 0.04629802703857422,
+  "A": {
+   "s": 1.0,
+   "flag": false,
+   "band": 1.0,
+   "interior": 1.0,
+   "full_band": 1.0,
+   "full_interior": 1.0,
+   "thin3_nskel": 10085
+  },
+  "B": {
+   "s": 0.8683040935672515,
+   "flag": false,
+   "band": 0.8683040935672515,
+   "interior": 1.0,
+   "full_band": 1.0,
+   "full_interior": 1.0,
+   "thin3_nskel": 10085,
+   "n_gaps": 187
+  },
+  "C": {
+   "s": 1.010644541671113,
+   "flag": false,
+   "band": 1.0,
+   "interior": 0.9894675712060819,
+   "full_band": 1.0,
+   "full_interior": 1.0,
+   "thin3_nskel": 10085,
+   "n_gaps": 187
+  },
+  "B2": {
+   "s": 0.0,
+   "flag": true,
+   "band": 0.0,
+   "interior": 0.9964742119404942,
+   "full_band": 1.0,
+   "full_interior": 1.0,
+   "thin3_nskel": 10085,
+   "n_gaps": 166
+  }
+ },
+ "R3": {
+  "case1": {
+   "sentences": [
+    "- syn, patch 256: overlap raises seam continuity (\u0394seam = +0.147 [+0.135, +0.158]).",
+    "- syn, patch 256: whole-image ratio does not differ detectably between 0% and 50% overlap (\u0394ratio = +0.000 [+0.000, +0.000])."
+   ],
+   "contrast": {
+    "dseam": [
+     0.14733418635894913,
+     0.13543716265387895,
+     0.15842789369398583
+    ],
+    "dratio": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "case2": {
+   "sentences": [
+    "- syn, patch 256: no detectable seam effect (\u0394seam = +0.000 [+0.000, +0.000]).",
+    "- syn, patch 256: whole-image ratio is higher at 0% than at 50% overlap (\u0394ratio = -0.096 [-0.099, -0.092]), not attributed to overlap."
+   ],
+   "contrast": {
+    "dseam": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "dratio": [
+     -0.0962605074642372,
+     -0.0990055488692666,
+     -0.09198037390185362
+    ]
+   }
+  }
+ },
+ "R4": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "pass": true
+}

@@ -1,0 +1,23 @@
+{
+ "ALL_PASS": true,
+ "b3_stats_match": {
+  "PASS": true,
+  "msg": "max rel err 6.41e-07, counters {'n_scaled': 3, 'n_shifted': 2, 'n_skipped_multicall': 0, 'n_gamma_clipped': 0}"
+ },
+ "global_mag_exact": {
+  "PASS": true,
+  "msg": "sum=148"
+ },
+ "mask_preserved": {
+  "PASS": true,
+  "msg": "zeros 148 -> 148, steps 3"
+ },
+ "realloc_exact": {
+  "PASS": true,
+  "msg": "sum k=148 target=148 per-layer s={'0': 0.403, '2': 0.75, '4': 0.875}"
+ },
+ "ste_w4_levels": {
+  "PASS": true,
+  "msg": "max levels 15"
+ }
+}

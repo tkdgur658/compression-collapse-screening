@@ -1,0 +1,23 @@
+{
+  "_doc": "Each row is one table row: a registered model plus config overrides. Fixed before results (protocol v1).",
+  "main": {
+    "pbe": {"model": "pbe", "cfg": {}},
+    "maresunet": {"model": "maresunet", "cfg": {}},
+    "utanet": {"model": "utanet", "cfg": {}},
+    "mk_unet": {"model": "mk_unet", "cfg": {}},
+    "mhorunet": {"model": "mhorunet", "cfg": {}},
+    "tinyunet": {"model": "tinyunet", "cfg": {}},
+    "ucmnet": {"model": "ucmnet", "cfg": {}},
+    "lbunet": {"model": "lbunet", "cfg": {}},
+    "cmunext": {"model": "cmunext", "cfg": {}},
+    "egeunet": {"model": "egeunet", "cfg": {}},
+    "malunet": {"model": "malunet", "cfg": {}}
+  },
+  "cumulative": {
+    "pbe_mbv2_plain_nomatch": {"model": "pbe", "cfg": {"block": "mbv2", "skip": "plain", "match": "none"}},
+    "pbe_ebpb_plain_nomatch": {"model": "pbe", "cfg": {"skip": "plain", "match": "none"}},
+    "pbe_ebpb_pred_nomatch": {"model": "pbe", "cfg": {"match": "none"}},
+    "pbe_ebpb_plain_match": {"model": "pbe", "cfg": {"skip": "plain"}},
+    "pbe": {"model": "pbe", "cfg": {}}
+  }
+}

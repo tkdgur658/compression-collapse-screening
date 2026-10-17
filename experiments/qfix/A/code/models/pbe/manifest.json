@@ -1,0 +1,27 @@
+{
+ "model": "pbe",
+ "role": "proposed",
+ "lineage": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO> (untracked files, no git revision)",
+  "legacy_class": "agent_T1X_model_arch.Phase57_LapSkipSup with base.bottleneck = DWSep(512) (agent_swap_train.py)",
+  "legacy_files_sha256": {
+   "agent_T1X_model_arch.py": "4d6a84cc05d825ef7a2a2e4b8c20f4c013fb537a259ebeb5b24d7d247acd4553",
+   "agent_T1X_model_phase44.py": "ddd9e367b2c7fef67b9c3210173b16c0dd2d800e6924bbbc7a50d6687a51132b",
+   "models/RJWNet_MSP3_SymB_5stage_EncOnly.py": "e729f427d6f39195fcb277bc0766a94b39d1fd721bcdde5a40d9d2a523568d74",
+   "models/RJWNet_MSP3_SymB.py": "00245d4ce1b70bd5ff7f184752ea78715446b3b63075ab5368b7097251057650",
+   "agent_swap_models.py": "e42c4fb515ce5c39026b9fd25ee9b499d4d6f36fc94cfd974b946d1919538056",
+   "agent_swap_train.py": "3076b7adf81177f7919f56930e0fe721c289deb2f65dfbac3db4a1f9107f547a"
+  }
+ },
+ "src": {
+  "net.py": "8b78f92eba0d542f10c7363420570a7ed99b383ac33bb4fc8d93381e804e9668",
+  "matching.py": "2f316e2838f2bb4a9960926209f55d67ec8ee6a8c042a84a9110905995fa0066"
+ },
+ "validation": {
+  "tool": "tools/verify_legacy.py",
+  "ckpt": "results/cos_rerun/cos_main/isic17_exp_1/checkpoint.pth",
+  "result": "pass: identical state_dict (235 keys); eval/train outputs, side outputs, skip heads max|diff| = 0 in float64; seg and matching losses equal; plain-skip and mbv2 variants identical",
+  "date": "2026-10-03"
+ },
+ "variants": "configs/rows.json suite cumulative (block ebpb|mbv2, skip predictive|plain, match cos|none)"
+}

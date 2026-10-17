@@ -1,0 +1,2612 @@
+[
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "pbe",
+  "tag": "pbe__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "pbe",
+  "tag": "pbe__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "pbe",
+  "tag": "pbe__etis__k3"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "pbe",
+  "tag": "pbe__etis__k4"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "pbe",
+  "tag": "pbe__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "pbe",
+  "tag": "pbe__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "pbe",
+  "tag": "pbe__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "pbe",
+  "tag": "pbe__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "pbe",
+  "tag": "pbe__PH2__k4"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "pbe",
+  "tag": "pbe__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "pbe",
+  "tag": "pbe__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "pbe",
+  "tag": "pbe__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "pbe",
+  "tag": "pbe__cvc__k3"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "pbe",
+  "tag": "pbe__cvc__k4"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "pbe",
+  "tag": "pbe__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "pbe",
+  "tag": "pbe__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "pbe",
+  "tag": "pbe__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "pbe",
+  "tag": "pbe__kvasir__k3"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "pbe",
+  "tag": "pbe__kvasir__k4"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "pbe",
+  "tag": "pbe__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "pbe",
+  "tag": "pbe__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "pbe",
+  "tag": "pbe__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "pbe",
+  "tag": "pbe__isic17__k4"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "pbe",
+  "tag": "pbe__isic17__k2"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "pbe",
+  "tag": "pbe__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "pbe",
+  "tag": "pbe__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "pbe",
+  "tag": "pbe__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "pbe",
+  "tag": "pbe__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/pbe/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "pbe",
+  "tag": "pbe__isic18__k4"
+ },
+ {
+  "dir": "<WORK>/pbe_v1_fill/runs/pbe/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "pbe",
+  "tag": "pbe__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/etis/k1",
+  "ds": "etis",
+  "k": 1,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__etis__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/etis/k2",
+  "ds": "etis",
+  "k": 2,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__etis__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/etis/k3",
+  "ds": "etis",
+  "k": 3,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__etis__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/etis/k4",
+  "ds": "etis",
+  "k": 4,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__etis__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/etis/k5",
+  "ds": "etis",
+  "k": 5,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__etis__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/PH2/k1",
+  "ds": "PH2",
+  "k": 1,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__PH2__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/PH2/k2",
+  "ds": "PH2",
+  "k": 2,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__PH2__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/PH2/k3",
+  "ds": "PH2",
+  "k": 3,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__PH2__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/PH2/k4",
+  "ds": "PH2",
+  "k": 4,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__PH2__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/PH2/k5",
+  "ds": "PH2",
+  "k": 5,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__PH2__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/cvc/k1",
+  "ds": "cvc",
+  "k": 1,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__cvc__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/cvc/k2",
+  "ds": "cvc",
+  "k": 2,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__cvc__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/cvc/k3",
+  "ds": "cvc",
+  "k": 3,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__cvc__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/cvc/k4",
+  "ds": "cvc",
+  "k": 4,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__cvc__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/cvc/k5",
+  "ds": "cvc",
+  "k": 5,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__cvc__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "tinyunet",
+  "old_failed_txt": true,
+  "tag": "tinyunet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "egeunet",
+  "old_failed_txt": true,
+  "tag": "egeunet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "egeunet",
+  "old_failed_txt": true,
+  "tag": "egeunet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/kvasir/k1",
+  "ds": "kvasir",
+  "k": 1,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__kvasir__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/kvasir/k2",
+  "ds": "kvasir",
+  "k": 2,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__kvasir__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/kvasir/k3",
+  "ds": "kvasir",
+  "k": 3,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__kvasir__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/kvasir/k4",
+  "ds": "kvasir",
+  "k": 4,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__kvasir__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/kvasir/k5",
+  "ds": "kvasir",
+  "k": 5,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__kvasir__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "utanet",
+  "old_failed_txt": true,
+  "tag": "utanet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic17/k1",
+  "ds": "isic17",
+  "k": 1,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic17__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic17/k2",
+  "ds": "isic17",
+  "k": 2,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic17__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic17/k3",
+  "ds": "isic17",
+  "k": 3,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic17__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic17/k4",
+  "ds": "isic17",
+  "k": 4,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic17__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic17/k5",
+  "ds": "isic17",
+  "k": 5,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic17__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/maresunet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "maresunet",
+  "old_failed_txt": false,
+  "tag": "maresunet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/utanet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "utanet",
+  "old_failed_txt": false,
+  "tag": "utanet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mk_unet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "mk_unet",
+  "old_failed_txt": false,
+  "tag": "mk_unet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "mhorunet",
+  "old_failed_txt": true,
+  "tag": "mhorunet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/mhorunet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "mhorunet",
+  "old_failed_txt": false,
+  "tag": "mhorunet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/tinyunet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "tinyunet",
+  "old_failed_txt": false,
+  "tag": "tinyunet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/ucmnet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "ucmnet",
+  "old_failed_txt": false,
+  "tag": "ucmnet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/lbunet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "lbunet",
+  "old_failed_txt": false,
+  "tag": "lbunet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/cmunext/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "cmunext",
+  "old_failed_txt": false,
+  "tag": "cmunext__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/egeunet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "egeunet",
+  "old_failed_txt": false,
+  "tag": "egeunet__isic18__k5"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic18/k1",
+  "ds": "isic18",
+  "k": 1,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic18__k1"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic18/k2",
+  "ds": "isic18",
+  "k": 2,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic18__k2"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic18/k3",
+  "ds": "isic18",
+  "k": 3,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic18__k3"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic18/k4",
+  "ds": "isic18",
+  "k": 4,
+  "model": "malunet",
+  "old_failed_txt": true,
+  "tag": "malunet__isic18__k4"
+ },
+ {
+  "dir": "<ARCHIVE>/runs/main/malunet/isic18/k5",
+  "ds": "isic18",
+  "k": 5,
+  "model": "malunet",
+  "old_failed_txt": false,
+  "tag": "malunet__isic18__k5"
+ }
+]

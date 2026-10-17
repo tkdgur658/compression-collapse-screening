@@ -1,0 +1,2238 @@
+{
+ "prereg": "PREREG_JETSON.md sha256 6afdf44545f203db7dd82c3c68d3eb02eb28024ca17ba5745e51ccd714fa96d4",
+ "run": "r1",
+ "device": "Jetson Nano (<device-user>-desktop), JetPack L4T R32.7.6",
+ "precision_primary": "FP16",
+ "timing": "trtexec --loadEngine --noDataTransfers --warmUp=0 --duration=0 --iterations=60 --exportTimes; first 10 dropped, 50 timed, GPU compute time per inference (computeMs)",
+ "export_env": {
+  "torch": "2.0.1+cu118",
+  "python": "3.8.20",
+  "threads": 2,
+  "cuda_visible": "",
+  "npz": "test_1_39eea3b5052f6523.npz",
+  "npz_sha256": "950dd3cc251d577c35f4bc934174a891e89bcd0eeaa136f1964e388f34b6fcab",
+  "f2b_fold_all_sha256": "9ad43a00f7c3a1e39109052b8eb60137eb2fb2801933967fe32c74577dfed074",
+  "f2_fuse_sha256": "a1ef95d3a5c0efefbb9ef2d18023189bf077863357ab0c61ed36f8875c08706f",
+  "input_shape": [
+   1,
+   3,
+   256,
+   256
+  ]
+ },
+ "onnxruntime_check": "1.20.1",
+ "fp32_row": null,
+ "models": {
+  "pbe": {
+   "display": "PBE-Net",
+   "precision": "FP16",
+   "onnx": "pbe_fused_op11.onnx",
+   "onnx_sha256": "604f7944927763f6994f270afe6bb3c1c0e2cb699ad10de71b0dbb0caaf1c1c9",
+   "ckpt_sha256": "890109c64bac8b49ccbdf99cdc85c8bd8036d7db39466dded33d0acb4e4378a8",
+   "fusion": "f2_fuse.fuse_pbe (RepConv merge + BN fold)",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 4.57763671875e-05,
+    "rel_diff_fp32": 5.508862842169243e-07,
+    "max_abs_diff_fp64": 1.2789769243681803e-13,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 33,
+   "bn_fused": 0,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 7.2479248046875e-05,
+    "rel": 9.248339728316878e-07,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "engine_sha256": "79b617126c78f18ac58760c0d84369217633e6124ada538d093db0fb9a69c7fd",
+   "engine_fp16_output_vs_fused_fp32": {
+    "max_abs_diff": 0.07832142333984393,
+    "rel": 0.0009993800302449938,
+    "sign_agree": 0.9999847412109375,
+    "n_images": 1
+   },
+   "discarded_attempts": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "attempts": {
+    "a1": {
+     "clock_before": {
+      "before_t": "1792151561.803764819",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "59500,55500,53000,50500,50000,54000,"
+     },
+     "clock_after": {
+      "after_t": "1792151576.421985955",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60000,57000,54000,52500,50000,56250,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.49 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.49 0.78 0.85 1/527 5670",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 108.292,
+      "iqr_ms": 0.47674999999999557,
+      "min_ms": 107.94,
+      "max_ms": 109.791,
+      "warmup_compute_ms": [
+       1751.54,
+       162.576,
+       112.385,
+       108.718,
+       108.854,
+       108.159,
+       108.534,
+       108.685,
+       108.675,
+       108.168
+      ]
+     }
+    },
+    "a2": {
+     "clock_before": {
+      "before_t": "1792151618.781676875",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "58500,55000,53000,50500,50000,53750,"
+     },
+     "clock_after": {
+      "after_t": "1792151633.388804948",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60000,57000,54000,51500,50000,56000,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.35 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.35 0.71 0.82 1/527 5946",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 108.7625,
+      "iqr_ms": 0.563999999999993,
+      "min_ms": 108.177,
+      "max_ms": 109.221,
+      "warmup_compute_ms": [
+       1743.57,
+       154.672,
+       108.482,
+       108.257,
+       108.269,
+       108.885,
+       108.336,
+       108.204,
+       108.296,
+       108.852
+      ]
+     }
+    },
+    "a3": {
+     "clock_before": {
+      "before_t": "1792151639.638495961",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1326000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1326000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "59000,55500,53000,50500,50000,54000,"
+     },
+     "clock_after": {
+      "after_t": "1792151654.541441765",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60500,57000,54000,52000,50000,55500,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu1_cur",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.45 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.45 0.71 0.82 1/527 6072",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 108.45400000000001,
+      "iqr_ms": 0.4900000000000091,
+      "min_ms": 108.195,
+      "max_ms": 109.537,
+      "warmup_compute_ms": [
+       1744.35,
+       219.72,
+       136.611,
+       136.374,
+       136.299,
+       135.691,
+       112.413,
+       109.015,
+       109.088,
+       108.372
+      ]
+     }
+    }
+   },
+   "status": "n.m.",
+   "reason": "unstable: clock state changed between the snapshots immediately before and after the block in all 3 attempts (1 + 2 re-measurements); changed: cpu0_cur, cpu0_min, cpu1_cur, cpu1_min, cpu2_cur, cpu2_min, cpu3_cur, cpu3_min, gpu_cur"
+  },
+  "maresunet": {
+   "display": "MAResUNet",
+   "precision": "FP16",
+   "onnx": null,
+   "onnx_sha256": null,
+   "ckpt_sha256": "2abb389988628272366ff19de5811ab73e3b99fc9b8082491540c9ab3c6cd327",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 1.811981201171875e-05,
+    "rel_diff_fp32": 9.526298299084453e-07,
+    "max_abs_diff_fp64": 2.4868995751603507e-14,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 48,
+   "bn_fused": 0,
+   "status": "n.m.",
+   "reason": "ONNX opset 11 export failed: UnsupportedOperatorError: Exporting the operator 'aten::einsum' to ONNX opset version 11 is not supported. Support for this operator was added in version 12, try exporting with this version."
+  },
+  "utanet": {
+   "display": "UTANet",
+   "precision": "FP16",
+   "onnx": "utanet_fused_op11.onnx",
+   "onnx_sha256": "b8ae343cae5ebf0ee6cad4f846e3a174cdc47f8124246e0dff3537c50afc48a5",
+   "ckpt_sha256": "0117d2b2bcfccea750148145a63445da42be848d066e8703ebd49799845c049a",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 9.059906005859375e-06,
+    "rel_diff_fp32": 1.3167633679203178e-06,
+    "max_abs_diff_fp64": 9.325873406851315e-15,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 46,
+   "bn_fused": 1,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 5.0067901611328125e-06,
+    "rel": 8.458284345769831e-07,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "engine_sha256": "f11dc9f3eedffe573cbf08e04f232093de560baab00d3204ee764295cfa6c3bf",
+   "engine_fp16_output_vs_fused_fp32": {
+    "max_abs_diff": 0.03674678546905508,
+    "rel": 0.006207864725450115,
+    "sign_agree": 0.9999237060546875,
+    "n_images": 1
+   },
+   "discarded_attempts": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "attempts": {
+    "a1": {
+     "clock_before": {
+      "before_t": "1792151660.837365948",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1428000",
+      "cpu1_cur": "1428000",
+      "cpu2_cur": "1326000",
+      "cpu3_cur": "1326000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "59500,55500,53000,51000,50000,54000,"
+     },
+     "clock_after": {
+      "after_t": "1792151673.492501489",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "61000,57000,54500,52500,50000,56500,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.45 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.45 0.69 0.81 2/528 6245",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 98.41335000000001,
+      "iqr_ms": 0.7266249999999985,
+      "min_ms": 97.5166,
+      "max_ms": 100.304,
+      "warmup_compute_ms": [
+       215.211,
+       98.499,
+       98.736,
+       98.769,
+       99.622,
+       98.566,
+       98.919,
+       97.875,
+       97.914,
+       98.571
+      ]
+     }
+    },
+    "a2": {
+     "clock_before": {
+      "before_t": "1792151715.828861005",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1326000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "59000,55000,53000,51000,50000,53500,"
+     },
+     "clock_after": {
+      "after_t": "1792151728.551812676",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60500,57000,54000,52500,50000,56500,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.42 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.42 0.65 0.79 1/528 6474",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 98.40135000000001,
+      "iqr_ms": 0.5892499999999927,
+      "min_ms": 97.584,
+      "max_ms": 99.1631,
+      "warmup_compute_ms": [
+       180.644,
+       121.472,
+       99.309,
+       97.587,
+       98.711,
+       98.341,
+       98.845,
+       97.754,
+       98.388,
+       97.791
+      ]
+     }
+    },
+    "a3": {
+     "clock_before": {
+      "before_t": "1792151770.903997868",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1326000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "58500,54500,52000,50000,50000,52750,"
+     },
+     "clock_after": {
+      "after_t": "1792151782.957160699",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60000,57000,53500,52000,50000,57250,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu1_cur",
+      "cpu2_cur",
+      "cpu3_cur",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.40 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.40 0.61 0.77 1/527 6702",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 98.43965,
+      "iqr_ms": 0.5723750000000081,
+      "min_ms": 97.5942,
+      "max_ms": 99.1477,
+      "warmup_compute_ms": [
+       256.555,
+       102.42,
+       97.833,
+       98.893,
+       98.394,
+       98.856,
+       98.391,
+       98.57,
+       98.914,
+       98.209
+      ]
+     }
+    }
+   },
+   "status": "n.m.",
+   "reason": "unstable: clock state changed between the snapshots immediately before and after the block in all 3 attempts (1 + 2 re-measurements); changed: cpu0_cur, cpu0_min, cpu1_cur, cpu1_min, cpu2_cur, cpu2_min, cpu3_cur, cpu3_min, gpu_cur"
+  },
+  "mk_unet": {
+   "display": "MK-UNet",
+   "precision": "FP16",
+   "onnx": "mk_unet_fused_op11.onnx",
+   "onnx_sha256": "33b9ffc210f17ccde1ef09661317a199c15bb1b681decf001e9c19346bfcb4b0",
+   "ckpt_sha256": "878f1ea5580069120d6cf318469d991dc98efc9716372149c5556e473003ef8f",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 7.152557373046875e-06,
+    "rel_diff_fp32": 5.798212913470563e-07,
+    "max_abs_diff_fp64": 1.2434497875801753e-14,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 62,
+   "bn_fused": 0,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 4.76837158203125e-06,
+    "rel": 4.034328260542083e-07,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "engine_sha256": "901b63dbae7168b565fd3a03676d97b9dcba56344806ecd3f5e7d3a8acd4b29a",
+   "engine_fp16_output_vs_fused_fp32": {
+    "max_abs_diff": 0.008568645324707136,
+    "rel": 0.0007249587703754846,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "discarded_attempts": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "attempts": {
+    "a1": {
+     "clock_before": {
+      "before_t": "1792151789.214240357",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1326000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "59000,55500,53000,50500,50000,53750,"
+     },
+     "clock_after": {
+      "after_t": "1792151799.755737390",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60000,56500,53500,51500,50000,56500,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.42 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.42 0.61 0.77 1/528 6831",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 41.84095,
+      "iqr_ms": 0.24602499999999594,
+      "min_ms": 41.5759,
+      "max_ms": 42.7839,
+      "warmup_compute_ms": [
+       1714.94,
+       63.744,
+       47.886,
+       45.33,
+       41.92,
+       41.769,
+       41.942,
+       42.083,
+       42.306,
+       41.761
+      ]
+     }
+    },
+    "a2": {
+     "clock_before": {
+      "before_t": "1792151806.052229265",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "59000,55500,53000,50500,50000,53750,"
+     },
+     "clock_after": {
+      "after_t": "1792151816.271666047",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60000,56500,53000,52000,50000,56750,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.47 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.47 0.61 0.77 1/528 6999",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 41.799400000000006,
+      "iqr_ms": 0.1757249999999999,
+      "min_ms": 41.5029,
+      "max_ms": 43.1313,
+      "warmup_compute_ms": [
+       1708.41,
+       147.868,
+       105.489,
+       65.574,
+       57.862,
+       45.002,
+       44.812,
+       45.008,
+       44.881,
+       45.41
+      ]
+     }
+    },
+    "a3": {
+     "clock_before": {
+      "before_t": "1792151822.539948666",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "59000,55000,53000,51000,50000,53500,"
+     },
+     "clock_after": {
+      "after_t": "1792151833.133198613",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "60000,56500,53500,52000,50000,56750,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu1_cur",
+      "cpu2_cur",
+      "cpu3_cur",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.44 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.44 0.60 0.76 1/527 7125",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 41.824600000000004,
+      "iqr_ms": 0.2505250000000032,
+      "min_ms": 41.5071,
+      "max_ms": 42.3218,
+      "warmup_compute_ms": [
+       1731.07,
+       62.624,
+       47.78,
+       41.943,
+       41.95,
+       41.879,
+       41.853,
+       41.939,
+       42.142,
+       41.693
+      ]
+     }
+    }
+   },
+   "status": "n.m.",
+   "reason": "unstable: clock state changed between the snapshots immediately before and after the block in all 3 attempts (1 + 2 re-measurements); changed: cpu0_cur, cpu0_min, cpu1_cur, cpu1_min, cpu2_cur, cpu2_min, cpu3_cur, cpu3_min, gpu_cur"
+  },
+  "mhorunet": {
+   "display": "MHorUNet",
+   "precision": "FP16",
+   "onnx": null,
+   "onnx_sha256": null,
+   "ckpt_sha256": "c61f0baa1254efe33be7f9013db474540aac12a3b2613efbf2658ad9143f5a60",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 0.0,
+    "rel_diff_fp32": 0.0,
+    "max_abs_diff_fp64": 0.0,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 0,
+   "bn_fused": 0,
+   "status": "n.m.",
+   "reason": "ONNX opset 11 export failed: UnsupportedOperatorError: Exporting the operator 'aten::fft_rfft2' to ONNX opset version 11 is not supported. Please feel free to request support or submit a pull request on PyTorch GitHub: https://github.com/pytorch/pytorch/issues."
+  },
+  "tinyunet": {
+   "display": "TinyU-Net",
+   "precision": "FP16",
+   "onnx": "tinyunet_fused_op11.onnx",
+   "onnx_sha256": "5d27a1bdfc4846d7abdffbbf6d6c26c6e0d57f80233069a20291c749c02df404",
+   "ckpt_sha256": "3f0c51bcd5d235812006ea2d62c9804eb48642ba92cf57c80ef9b4b36346366f",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 1.5854835510253906e-05,
+    "rel_diff_fp32": 1.457073220624374e-06,
+    "max_abs_diff_fp64": 3.752553823233029e-14,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 72,
+   "bn_fused": 0,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 1.4781951904296875e-05,
+    "rel": 1.5605252748210857e-06,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "status": "n.m.",
+   "reason": "TensorRT 8.2.1 ONNX parser failed, FP16 engine not built: [TRT] ModelImporter.cpp:773: While parsing node number 154 [Resize -> \"/m/decoder4/Resize_output_0\"]: | Assertion failed: mode != \"cubic\" && \"This version of TensorRT does not support cubic interpolation!\" (raw/jetson/logs/tinyunet_fp16_build.log)"
+  },
+  "ucmnet": {
+   "display": "UCMNet",
+   "precision": "FP16",
+   "onnx": "ucmnet_fused_op11.onnx",
+   "onnx_sha256": "35efbf7bbcdf05d201904a34be82322f12f1dfdeaf07166c2972cbb6ee3ad016",
+   "ckpt_sha256": "71dd6722a79c1e54c24cdbd670d29ae4aa8ae9be6d40204aba176021ab81391c",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 0.0,
+    "rel_diff_fp32": 0.0,
+    "max_abs_diff_fp64": 0.0,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 0,
+   "bn_fused": 0,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 0.005074292421340942,
+    "rel": 0.0008410295203065767,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "engine_sha256": "0aa896139e4cc6003fd830fb34d739f030f076f6f187dde6cdef60a5f44f61d8",
+   "engine_fp16_output_vs_fused_fp32": {
+    "max_abs_diff": 0.03511227842044831,
+    "rel": 0.0058196217767475114,
+    "sign_agree": 0.999969482421875,
+    "n_images": 1
+   },
+   "discarded_attempts": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "attempts": {
+    "a1": {
+     "clock_before": {
+      "before_t": "1792151948.885247530",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1326000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57000,53500,51000,49000,50000,52000,"
+     },
+     "clock_after": {
+      "after_t": "1792151959.449745159",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57500,54500,51000,50000,50000,53250,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu1_cur",
+      "cpu2_cur",
+      "cpu3_cur",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.39 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.39 0.57 0.73 1/525 7477",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 20.1476,
+      "iqr_ms": 0.6675750000000029,
+      "min_ms": 19.8621,
+      "max_ms": 31.842,
+      "warmup_compute_ms": [
+       2315.77,
+       72.33,
+       37.017,
+       25.368,
+       25.414,
+       25.366,
+       25.399,
+       21.759,
+       28.799,
+       30.682
+      ]
+     }
+    },
+    "a2": {
+     "clock_before": {
+      "before_t": "1792152001.806169604",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1428000",
+      "cpu2_cur": "1428000",
+      "cpu3_cur": "1326000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56000,53000,50000,48000,50000,50750,"
+     },
+     "clock_after": {
+      "after_t": "1792152011.868768103",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57000,54000,51000,49000,50000,52000,"
+     },
+     "changed_keys": [
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.46 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.46 0.57 0.72 1/527 7711",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 19.8832,
+      "iqr_ms": 0.019325000000002035,
+      "min_ms": 19.8418,
+      "max_ms": 20.0269,
+      "warmup_compute_ms": [
+       1968.66,
+       37.138,
+       26.272,
+       23.247,
+       23.169,
+       19.884,
+       19.894,
+       19.91,
+       19.907,
+       19.881
+      ]
+     }
+    },
+    "a3": {
+     "clock_before": {
+      "before_t": "1792152054.227864029",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56000,52000,50500,47500,50000,51000,"
+     },
+     "clock_after": {
+      "after_t": "1792152064.792471151",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57000,54000,50500,49000,50000,52500,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.38 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.38 0.55 0.70 3/526 7939",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 20.06275,
+      "iqr_ms": 9.887250000000002,
+      "min_ms": 19.8843,
+      "max_ms": 30.521,
+      "warmup_compute_ms": [
+       2205.28,
+       44.245,
+       32.95,
+       25.364,
+       22.341,
+       19.841,
+       27.863,
+       30.223,
+       30.169,
+       29.959
+      ]
+     }
+    }
+   },
+   "status": "n.m.",
+   "reason": "unstable: clock state changed between the snapshots immediately before and after the block in all 3 attempts (1 + 2 re-measurements); changed: cpu0_cur, cpu0_min, cpu1_cur, cpu1_min, cpu2_cur, cpu2_min, cpu3_cur, cpu3_min, gpu_cur"
+  },
+  "lbunet": {
+   "display": "LB-UNet",
+   "precision": "FP16",
+   "onnx": "lbunet_fused_op11.onnx",
+   "onnx_sha256": "770068da2148a841a8765f2065f43fc02128cd76cdcb1115ad35f9b32229c2e3",
+   "ckpt_sha256": "9f3d882945942a4cbbab9680ed2d1375004aa91e2ecf93ca24458097741d962c",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 7.62939453125e-06,
+    "rel_diff_fp32": 5.428428912925218e-07,
+    "max_abs_diff_fp64": 1.2434497875801753e-14,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 5,
+   "bn_fused": 3,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 0.0008589029312133789,
+    "rel": 7.333763282203618e-05,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "status": "n.m.",
+   "reason": "TensorRT 8.2.1 ONNX parser failed, FP16 engine not built: Error[4]: [shuffleNode.cpp::symbolicExecute::387] Error Code 4: Internal Error (/m/encoder3/encoder3.1/conv1/Reshape: IShuffleLayer applied to shape tensor must have 0 or 1 reshape dimensions: dimensions were [-1,2]) | [TRT] ModelImporter.cpp:773: While parsing node number 76 [Pad -> \"/m/encoder3/encoder3.1/conv1/Pad_output_0\"]: (raw/jetson/logs/lbunet_fp16_build.log)"
+  },
+  "cmunext": {
+   "display": "CMUNeXt",
+   "precision": "FP16",
+   "onnx": "cmunext_fused_op11.onnx",
+   "onnx_sha256": "f697012ad896406546cf947e431d53433c99c3272452ecab176714f9eeac2d2b",
+   "ckpt_sha256": "78138320169fe36cb871452cd4fb62f6f5646710c40615bfebffc9a25329e495",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 2.3126602172851562e-05,
+    "rel_diff_fp32": 2.942787776278473e-06,
+    "max_abs_diff_fp64": 3.8191672047105385e-14,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 43,
+   "bn_fused": 33,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 1.3113021850585938e-05,
+    "rel": 1.6685910071682062e-06,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "engine_sha256": "cc2188da8ff41ef98566a484baea507d627c644d6c54d959c97ff9804680bbd8",
+   "engine_fp16_output_vs_fused_fp32": {
+    "max_abs_diff": 0.07005255706787095,
+    "rel": 0.008913968731575324,
+    "sign_agree": 0.9999847412109375,
+    "n_images": 1
+   },
+   "discarded_attempts": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "attempts": {
+    "a1": {
+     "clock_before": {
+      "before_t": "1792152107.175475321",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56000,53000,50000,48000,50000,50500,"
+     },
+     "clock_after": {
+      "after_t": "1792152118.268129296",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56500,53000,50500,49000,50000,52250,"
+     },
+     "changed_keys": [
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.38 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.38 0.54 0.69 2/528 8132",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 43.3126,
+      "iqr_ms": 0.07425000000000637,
+      "min_ms": 43.1965,
+      "max_ms": 43.6328,
+      "warmup_compute_ms": [
+       2015.76,
+       146.442,
+       64.161,
+       50.819,
+       43.892,
+       43.311,
+       43.295,
+       43.231,
+       43.232,
+       43.263
+      ]
+     }
+    },
+    "a2": {
+     "clock_before": {
+      "before_t": "1792152124.519416026",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1428000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1326000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56000,52000,49500,47500,50000,50500,"
+     },
+     "clock_after": {
+      "after_t": "1792152135.315936870",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56500,53500,50500,48500,50000,52500,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.40 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.40 0.53 0.69 1/525 8297",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 43.2899,
+      "iqr_ms": 0.07757500000000306,
+      "min_ms": 43.1819,
+      "max_ms": 43.4978,
+      "warmup_compute_ms": [
+       1860.03,
+       121.231,
+       63.173,
+       46.724,
+       46.742,
+       43.537,
+       43.169,
+       43.275,
+       43.309,
+       43.281
+      ]
+     }
+    },
+    "a3": {
+     "clock_before": {
+      "before_t": "1792152141.569049594",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1326000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "55500,52000,50000,47500,50000,51000,"
+     },
+     "clock_after": {
+      "after_t": "1792152152.063891191",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57000,53000,50500,49000,50000,52250,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu1_cur",
+      "cpu2_cur",
+      "cpu3_cur",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.38 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.38 0.52 0.68 1/525 8464",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 43.28675,
+      "iqr_ms": 0.07429999999999382,
+      "min_ms": 43.1301,
+      "max_ms": 43.5256,
+      "warmup_compute_ms": [
+       1582.7,
+       71.018,
+       65.376,
+       49.225,
+       43.271,
+       43.218,
+       43.216,
+       43.313,
+       43.351,
+       43.278
+      ]
+     }
+    }
+   },
+   "status": "n.m.",
+   "reason": "unstable: clock state changed between the snapshots immediately before and after the block in all 3 attempts (1 + 2 re-measurements); changed: cpu0_cur, cpu0_min, cpu1_cur, cpu1_min, cpu2_cur, cpu2_min, cpu3_cur, cpu3_min, gpu_cur"
+  },
+  "egeunet": {
+   "display": "EGE-UNet",
+   "precision": "FP16",
+   "onnx": "egeunet_fused_op11.onnx",
+   "onnx_sha256": "8201f70c8d59f3af8d9c1c23faa68ba82c05f44482bc0bb0180d7a81946329a5",
+   "ckpt_sha256": "a059b4db915ec4736ba6f024cb36f158009aa2635b056bc3b9345d157806b023",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 0.0,
+    "rel_diff_fp32": 0.0,
+    "max_abs_diff_fp64": 0.0,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 0,
+   "bn_fused": 0,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 0.0011688023805618286,
+    "rel": 4.936009650683285e-05,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "status": "n.m.",
+   "reason": "TensorRT 8.2.1 ONNX parser failed, FP16 engine not built: Error[4]: /m/encoder4/encoder4.0/If_OutputLayer: IIfConditionalOutputLayer inputs must have the same shape. | [TRT] ModelImporter.cpp:773: While parsing node number 123 [If -> \"/m/encoder4/encoder4.0/If_output_0\"]: (raw/jetson/logs/egeunet_fp16_build.log)"
+  },
+  "malunet": {
+   "display": "MALUNet",
+   "precision": "FP16",
+   "onnx": "malunet_fused_op11.onnx",
+   "onnx_sha256": "5ff1e7bee989b24e587e2387ffd6acb02d5ab6ebbcf8f36046a9a82430c504fd",
+   "ckpt_sha256": "402d553da60949777ec669ed6f5322af9e9e309f7fb0a6a50a434e575ca73647",
+   "fusion": "f2b_fold_all.generic_fold",
+   "equivalence_fused_vs_training": {
+    "max_abs_diff_fp32": 0.0,
+    "rel_diff_fp32": 0.0,
+    "max_abs_diff_fp64": 0.0,
+    "sign_agree": 1.0,
+    "n_images": 4
+   },
+   "bn_unfused": 0,
+   "bn_fused": 0,
+   "equivalence_onnx_vs_fused": {
+    "max_abs_diff": 0.0003833770751953125,
+    "rel": 2.660382340620266e-05,
+    "sign_agree": 1.0,
+    "n_images": 1
+   },
+   "tensorrt_version": "8.2.1",
+   "engine_sha256": "70b246002586c3145bbba0c206e08fae1421ca42dcbdc68470626d0050195f4f",
+   "engine_fp16_output_vs_fused_fp32": {
+    "max_abs_diff": 0.01111010742187446,
+    "rel": 0.0007709676842959639,
+    "sign_agree": 0.9999847412109375,
+    "n_images": 1
+   },
+   "discarded_attempts": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "attempts": {
+    "a1": {
+     "clock_before": {
+      "before_t": "1792152158.326514775",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1224000",
+      "cpu1_cur": "1428000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56000,52500,50500,48500,50000,51250,"
+     },
+     "clock_after": {
+      "after_t": "1792152168.653136277",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57500,55000,51000,50000,50000,51750,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu1_cur",
+      "cpu2_cur",
+      "cpu3_cur",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.30 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.30 0.50 0.67 1/525 8592",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 20.576300000000003,
+      "iqr_ms": 0.18077500000000057,
+      "min_ms": 20.2732,
+      "max_ms": 21.1741,
+      "warmup_compute_ms": [
+       2148.85,
+       63.341,
+       55.744,
+       21.866,
+       21.85,
+       21.887,
+       15.241,
+       14.201,
+       14.205,
+       18.307
+      ]
+     }
+    },
+    "a2": {
+     "clock_before": {
+      "before_t": "1792152175.001691398",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1326000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56500,52000,50500,48500,50000,51250,"
+     },
+     "clock_after": {
+      "after_t": "1792152185.498394328",
+      "gpu_cur": "844800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "844800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57000,54000,50500,49500,50000,52750,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu1_cur",
+      "cpu2_cur",
+      "cpu3_cur",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.34 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.34 0.50 0.67 1/525 8760",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 20.9518,
+      "iqr_ms": 0.24239999999999995,
+      "min_ms": 20.6284,
+      "max_ms": 32.4724,
+      "warmup_compute_ms": [
+       2136.0,
+       26.095,
+       26.112,
+       26.197,
+       25.93,
+       25.897,
+       25.939,
+       25.89,
+       24.454,
+       19.75
+      ]
+     }
+    },
+    "a3": {
+     "clock_before": {
+      "before_t": "1792152191.758755596",
+      "gpu_cur": "76800000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1428000",
+      "cpu1_cur": "1224000",
+      "cpu2_cur": "1224000",
+      "cpu3_cur": "1224000",
+      "cpu0_min": "1200000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "1200000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "1200000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "1200000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_before_extra": {
+      "gpu_target": "76800000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "56500,53000,50500,48500,50000,51000,"
+     },
+     "clock_after": {
+      "after_t": "1792152202.224323541",
+      "gpu_cur": "921600000",
+      "gpu_min": "76800000",
+      "gpu_max": "921600000",
+      "gpu_gov": "nvhost_podgov",
+      "cpu_online": "0-3",
+      "cpu0_cur": "1479000",
+      "cpu1_cur": "1479000",
+      "cpu2_cur": "1479000",
+      "cpu3_cur": "1479000",
+      "cpu0_min": "102000",
+      "cpu0_max": "1479000",
+      "cpu0_gov": "schedutil",
+      "cpu1_min": "102000",
+      "cpu1_max": "1479000",
+      "cpu1_gov": "schedutil",
+      "cpu2_min": "102000",
+      "cpu2_max": "1479000",
+      "cpu2_gov": "schedutil",
+      "cpu3_min": "102000",
+      "cpu3_max": "1479000",
+      "cpu3_gov": "schedutil"
+     },
+     "clock_after_extra": {
+      "gpu_target": "921600000",
+      "emc_freq": "not_readable_without_root",
+      "emc_force_max_rate": "N",
+      "temps_mC": "57000,54000,50500,49500,50000,52500,"
+     },
+     "changed_keys": [
+      "cpu0_cur",
+      "cpu0_min",
+      "cpu1_cur",
+      "cpu1_min",
+      "cpu2_cur",
+      "cpu2_min",
+      "cpu3_cur",
+      "cpu3_min",
+      "gpu_cur"
+     ],
+     "precondition": "load1=0.41 tegrastats_samples=5 gr3d_nonzero=0",
+     "nvpmodel": [
+      "NVPM WARN: fan mode is not set!",
+      "NV Power Mode: MAXN",
+      "0",
+      "NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13",
+      "NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap"
+     ],
+     "who": [
+      "<device-user>   :0           2026-08-10 14:49 (:0)"
+     ],
+     "loadavg": "0.41 0.50 0.67 1/526 8928",
+     "discarded_block_stats": {
+      "note": "DISCARDED by the PREREG clock rule; descriptive record only, not for the manuscript",
+      "n_entries": 60,
+      "median_ms": 20.84425,
+      "iqr_ms": 0.14612499999999784,
+      "min_ms": 20.5322,
+      "max_ms": 21.9465,
+      "warmup_compute_ms": [
+       2222.79,
+       63.319,
+       52.077,
+       21.853,
+       21.848,
+       21.892,
+       19.938,
+       14.193,
+       14.195,
+       14.809
+      ]
+     }
+    }
+   },
+   "status": "n.m.",
+   "reason": "unstable: clock state changed between the snapshots immediately before and after the block in all 3 attempts (1 + 2 re-measurements); changed: cpu0_cur, cpu0_min, cpu1_cur, cpu1_min, cpu2_cur, cpu2_min, cpu3_cur, cpu3_min, gpu_cur"
+  }
+ }
+}

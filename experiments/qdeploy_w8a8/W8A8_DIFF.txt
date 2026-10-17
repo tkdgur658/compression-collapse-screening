@@ -1,0 +1,37 @@
+30c30
+< BASE = '<WORK>/qdeploy'
+---
+> BASE = '<WORK>/qdeploy_w8a8'   # W8A8 addendum (PREREG_QDEPLOY_ADDENDUM_W8A8.md)
+54,55c54,55
+< GPU_CAP_S = 6.0 * 3600.0
+< SETTINGS = ['O_w4', 'O_a6', 'O_l50', 'D_w4', 'D_a6', 'D_l50', 'S_w4g', 'S_w4c', 'S_a6c', 'S_l50c']
+---
+> GPU_CAP_S = 1.0 * 3600.0
+> SETTINGS = ['D_w8a8']
+59c59,60
+<         'S_w4g': ('dep', 'w4_pt'), 'S_w4c': ('train', 'w4_pc'), 'S_a6c': ('dep', 'a6c'), 'S_l50c': ('dep', 'l50c')}
+---
+>         'S_w4g': ('dep', 'w4_pt'), 'S_w4c': ('train', 'w4_pc'), 'S_a6c': ('dep', 'a6c'), 'S_l50c': ('dep', 'l50c'),
+>         'D_w8a8': ('dep', 'w8a8')}
+276a278,288
+>             elif op == 'w8a8':
+>                 mx = 0
+>                 for n, q in self.targets:
+>                     w, lv = rtn_sym_channel(torch, self.orig[n], 8, self.axis[n])
+>                     q.copy_(w)
+>                     mx = max(mx, int(lv.abs().max()))
+>                 assert mx <= 127
+>                 for n, m in self.leaf:
+>                     hs.append(m.register_forward_hook(qa.act_hook_factory(torch, 8)))
+>                 integ = {'n_tensors': len(self.targets), 'max_abs_level': mx, 'n_hooked': len(self.leaf),
+>                          'n_hooked_executed': sum(1 for _, m in self.leaf if id(m) in self.executed)}
+781,782c793,794
+<             ints = {s: rec['cells'][s]['integrity'] for s in ('D_w4', 'D_l50')}
+<             print('[%s] %s %.1fs bs=%d E1=%s(%.1e) folded=%s bn %d->%d restored=%s D_w4 n=%d D_l50 minzero=%.3f used=%.0fs' % (
+---
+>             iw = rec['cells']['D_w8a8']['integrity']
+>             print('[%s] %s %.1fs bs=%d E1=%s(%.1e) folded=%s bn %d->%d restored=%s w8a8 n=%d maxlev=%d hooked=%d used=%.0fs' % (
+785c797
+<                 ints['D_w4']['n_tensors'], ints['D_l50']['min_zero_frac'] or -1, used), flush=True)
+---
+>                 iw['n_tensors'], iw['max_abs_level'], iw['n_hooked_executed'], used), flush=True)

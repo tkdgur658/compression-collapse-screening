@@ -1,0 +1,57 @@
+{
+ "pbe": {
+  "params_inference": 1334337,
+  "gflops_thop": 3.370293248,
+  "gflops_ptflops": 3.387889664
+ },
+ "maresunet": {
+  "params_inference": 26275065,
+  "gflops_thop": 17.365915776,
+  "gflops_ptflops": 14.205820928
+ },
+ "utanet": {
+  "params_inference": 24075305,
+  "gflops_thop": 164.234264576,
+  "gflops_ptflops": 86.68643328
+ },
+ "mk_unet": {
+  "params_inference": 315566,
+  "gflops_thop": 0.655086048,
+  "gflops_ptflops": 0.64140848
+ },
+ "mhorunet": {
+  "params_inference": 4962159,
+  "gflops_thop": 1.149247808,
+  "gflops_ptflops": 1.1865136
+ },
+ "tinyunet": {
+  "params_inference": 481105,
+  "gflops_thop": 3.318349824,
+  "gflops_ptflops": 3.853254656
+ },
+ "ucmnet": {
+  "params_inference": 47436,
+  "gflops_thop": 0.090386432,
+  "gflops_ptflops": 0.114625024
+ },
+ "lbunet": {
+  "params_inference": 55865,
+  "gflops_thop": 0.195999744,
+  "gflops_ptflops": 0.204817024
+ },
+ "cmunext": {
+  "params_inference": 144977,
+  "gflops_thop": 1.553104896,
+  "gflops_ptflops": 1.554931712
+ },
+ "egeunet": {
+  "params_inference": 53374,
+  "gflops_thop": 0.144192512,
+  "gflops_ptflops": 0.157433984
+ },
+ "malunet": {
+  "params_inference": 177943,
+  "gflops_thop": 0.1659456,
+  "gflops_ptflops": 0.179248
+ }
+}

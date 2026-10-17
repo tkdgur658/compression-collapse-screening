@@ -1,0 +1,17 @@
+{
+ "matched": [
+  "split folders and seeds",
+  "preprocessing and augmentation",
+  "optimizer, schedule, epochs, batch, grad clip",
+  "checkpoint rule",
+  "metric and threshold",
+  "GPU and software env"
+ ],
+ "deep_supervision": "native 5 side outputs, weights 0.1-0.5",
+ "intended_differences": [],
+ "unresolved_differences": [
+  "common protocol v1 hyperparameters, not the original paper settings (TODO: list original lr/epochs/input size from the paper PDF)",
+  "source is the legacy repository copy; equality with the official upstream release not yet audited"
+ ],
+ "privileged_information": "none"
+}

@@ -1,0 +1,14 @@
+{
+ "model": "maresunet",
+ "class": "MAResUNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/MAResUNet.py",
+  "sha256": "8df94950a4fa9008b0f1ca251953ee3e37ec119cc18d5e6a3dc886b82d71b30d",
+  "copied_to": "src/MAResUNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

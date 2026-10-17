@@ -1,0 +1,14 @@
+{
+ "model": "mhorunet",
+ "class": "MHorUNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/MHorUNet.py",
+  "sha256": "df5b9459b07bf7af913072975ac7591c5ca0b10cdcc02649fb033ebf8d4afb09",
+  "copied_to": "src/MHorUNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

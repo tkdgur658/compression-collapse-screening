@@ -1,0 +1,14 @@
+{
+ "model": "tinyunet",
+ "class": "TinyUNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/TinyUNet.py",
+  "sha256": "109c4b371d4b08add6fec1df45032d6ff6ad1d71b6e8ba8e586cf4d72bd55422",
+  "copied_to": "src/TinyUNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

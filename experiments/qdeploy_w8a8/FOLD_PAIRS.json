@@ -1,0 +1,1104 @@
+{
+ "cmunext": {
+  "accepted": [
+   [
+    "stem.conv.0",
+    "stem.conv.1"
+   ],
+   [
+    "encoder1.up.conv.0",
+    "encoder1.up.conv.1"
+   ],
+   [
+    "encoder2.up.conv.0",
+    "encoder2.up.conv.1"
+   ],
+   [
+    "encoder3.up.conv.0",
+    "encoder3.up.conv.1"
+   ],
+   [
+    "encoder4.up.conv.0",
+    "encoder4.up.conv.1"
+   ],
+   [
+    "encoder5.up.conv.0",
+    "encoder5.up.conv.1"
+   ],
+   [
+    "Up5.up.1",
+    "Up5.up.2"
+   ],
+   [
+    "Up4.up.1",
+    "Up4.up.2"
+   ],
+   [
+    "Up3.up.1",
+    "Up3.up.2"
+   ],
+   [
+    "Up2.up.1",
+    "Up2.up.2"
+   ]
+  ],
+  "accepted_maxdiff": 2.220446049250313e-16,
+  "ckpt": "<ARCHIVE>/runs/main/cmunext/etis/k1",
+  "logit_absmax_randomised": 0.7273827137030515,
+  "n_candidates": 10,
+  "norm_counts": {
+   "bn": 43,
+   "gn": 0,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 0.35314369201660156
+ },
+ "egeunet": {
+  "accepted": [],
+  "accepted_maxdiff": 0.0,
+  "ckpt": "<ARCHIVE>/runs/main/egeunet/etis/k1",
+  "logit_absmax_randomised": 25.928854054581418,
+  "n_candidates": 0,
+  "norm_counts": {
+   "bn": 0,
+   "gn": 10,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 0.0438385009765625
+ },
+ "lbunet": {
+  "accepted": [
+   [
+    "encoder3.1.conv1",
+    "encoder3.1.norm1"
+   ],
+   [
+    "encoder3.1.conv3",
+    "encoder3.1.norm2"
+   ]
+  ],
+  "accepted_maxdiff": 2.6201263381153694e-14,
+  "ckpt": "<ARCHIVE>/runs/main/lbunet/etis/k1",
+  "logit_absmax_randomised": 18.577286658720187,
+  "n_candidates": 2,
+  "norm_counts": {
+   "bn": 5,
+   "gn": 10,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 0.0670478343963623
+ },
+ "malunet": {
+  "accepted": [],
+  "accepted_maxdiff": 0.0,
+  "ckpt": "<ARCHIVE>/runs/main/malunet/etis/k1",
+  "logit_absmax_randomised": 17.957384710790897,
+  "n_candidates": 0,
+  "norm_counts": {
+   "bn": 0,
+   "gn": 40,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 0.04803347587585449
+ },
+ "maresunet": {
+  "accepted": [
+   [
+    "firstconv",
+    "firstbn"
+   ],
+   [
+    "encoder1.0.conv1",
+    "encoder1.0.bn1"
+   ],
+   [
+    "encoder1.0.conv2",
+    "encoder1.0.bn2"
+   ],
+   [
+    "encoder1.1.conv1",
+    "encoder1.1.bn1"
+   ],
+   [
+    "encoder1.1.conv2",
+    "encoder1.1.bn2"
+   ],
+   [
+    "encoder1.2.conv1",
+    "encoder1.2.bn1"
+   ],
+   [
+    "encoder1.2.conv2",
+    "encoder1.2.bn2"
+   ],
+   [
+    "encoder2.0.conv1",
+    "encoder2.0.bn1"
+   ],
+   [
+    "encoder2.0.conv2",
+    "encoder2.0.bn2"
+   ],
+   [
+    "encoder2.0.downsample.0",
+    "encoder2.0.downsample.1"
+   ],
+   [
+    "encoder2.1.conv1",
+    "encoder2.1.bn1"
+   ],
+   [
+    "encoder2.1.conv2",
+    "encoder2.1.bn2"
+   ],
+   [
+    "encoder2.2.conv1",
+    "encoder2.2.bn1"
+   ],
+   [
+    "encoder2.2.conv2",
+    "encoder2.2.bn2"
+   ],
+   [
+    "encoder2.3.conv1",
+    "encoder2.3.bn1"
+   ],
+   [
+    "encoder2.3.conv2",
+    "encoder2.3.bn2"
+   ],
+   [
+    "encoder3.0.conv1",
+    "encoder3.0.bn1"
+   ],
+   [
+    "encoder3.0.conv2",
+    "encoder3.0.bn2"
+   ],
+   [
+    "encoder3.0.downsample.0",
+    "encoder3.0.downsample.1"
+   ],
+   [
+    "encoder3.1.conv1",
+    "encoder3.1.bn1"
+   ],
+   [
+    "encoder3.1.conv2",
+    "encoder3.1.bn2"
+   ],
+   [
+    "encoder3.2.conv1",
+    "encoder3.2.bn1"
+   ],
+   [
+    "encoder3.2.conv2",
+    "encoder3.2.bn2"
+   ],
+   [
+    "encoder3.3.conv1",
+    "encoder3.3.bn1"
+   ],
+   [
+    "encoder3.3.conv2",
+    "encoder3.3.bn2"
+   ],
+   [
+    "encoder3.4.conv1",
+    "encoder3.4.bn1"
+   ],
+   [
+    "encoder3.4.conv2",
+    "encoder3.4.bn2"
+   ],
+   [
+    "encoder3.5.conv1",
+    "encoder3.5.bn1"
+   ],
+   [
+    "encoder3.5.conv2",
+    "encoder3.5.bn2"
+   ],
+   [
+    "encoder4.0.conv1",
+    "encoder4.0.bn1"
+   ],
+   [
+    "encoder4.0.conv2",
+    "encoder4.0.bn2"
+   ],
+   [
+    "encoder4.0.downsample.0",
+    "encoder4.0.downsample.1"
+   ],
+   [
+    "encoder4.1.conv1",
+    "encoder4.1.bn1"
+   ],
+   [
+    "encoder4.1.conv2",
+    "encoder4.1.bn2"
+   ],
+   [
+    "encoder4.2.conv1",
+    "encoder4.2.bn1"
+   ],
+   [
+    "encoder4.2.conv2",
+    "encoder4.2.bn2"
+   ],
+   [
+    "decoder4.conv1",
+    "decoder4.norm1"
+   ],
+   [
+    "decoder4.deconv2",
+    "decoder4.norm2"
+   ],
+   [
+    "decoder4.conv3",
+    "decoder4.norm3"
+   ],
+   [
+    "decoder3.conv1",
+    "decoder3.norm1"
+   ],
+   [
+    "decoder3.deconv2",
+    "decoder3.norm2"
+   ],
+   [
+    "decoder3.conv3",
+    "decoder3.norm3"
+   ],
+   [
+    "decoder2.conv1",
+    "decoder2.norm1"
+   ],
+   [
+    "decoder2.deconv2",
+    "decoder2.norm2"
+   ],
+   [
+    "decoder2.conv3",
+    "decoder2.norm3"
+   ],
+   [
+    "decoder1.conv1",
+    "decoder1.norm1"
+   ],
+   [
+    "decoder1.deconv2",
+    "decoder1.norm2"
+   ],
+   [
+    "decoder1.conv3",
+    "decoder1.norm3"
+   ]
+  ],
+  "accepted_maxdiff": 103.25,
+  "ckpt": "<ARCHIVE>/runs/main/maresunet/etis/k1",
+  "logit_absmax_randomised": 1.090975758713801e+16,
+  "n_candidates": 48,
+  "norm_counts": {
+   "bn": 48,
+   "gn": 0,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 11.122475624084473
+ },
+ "mhorunet": {
+  "accepted": [],
+  "accepted_maxdiff": 0.0,
+  "ckpt": "<ARCHIVE>/runs/main/mhorunet/etis/k1",
+  "logit_absmax_randomised": 13.715261582274838,
+  "n_candidates": 0,
+  "norm_counts": {
+   "bn": 0,
+   "gn": 10,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 0.23744821548461914
+ },
+ "mk_unet": {
+  "accepted": [
+   [
+    "encoder1.0.pconv1.0",
+    "encoder1.0.pconv1.1"
+   ],
+   [
+    "encoder1.0.multi_scale_dwconv.dwconvs.0.0",
+    "encoder1.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "encoder1.0.multi_scale_dwconv.dwconvs.1.0",
+    "encoder1.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "encoder1.0.multi_scale_dwconv.dwconvs.2.0",
+    "encoder1.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "encoder1.0.pconv2.0",
+    "encoder1.0.pconv2.1"
+   ],
+   [
+    "encoder2.0.pconv1.0",
+    "encoder2.0.pconv1.1"
+   ],
+   [
+    "encoder2.0.multi_scale_dwconv.dwconvs.0.0",
+    "encoder2.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "encoder2.0.multi_scale_dwconv.dwconvs.1.0",
+    "encoder2.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "encoder2.0.multi_scale_dwconv.dwconvs.2.0",
+    "encoder2.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "encoder2.0.pconv2.0",
+    "encoder2.0.pconv2.1"
+   ],
+   [
+    "encoder3.0.pconv1.0",
+    "encoder3.0.pconv1.1"
+   ],
+   [
+    "encoder3.0.multi_scale_dwconv.dwconvs.0.0",
+    "encoder3.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "encoder3.0.multi_scale_dwconv.dwconvs.1.0",
+    "encoder3.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "encoder3.0.multi_scale_dwconv.dwconvs.2.0",
+    "encoder3.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "encoder3.0.pconv2.0",
+    "encoder3.0.pconv2.1"
+   ],
+   [
+    "encoder4.0.pconv1.0",
+    "encoder4.0.pconv1.1"
+   ],
+   [
+    "encoder4.0.multi_scale_dwconv.dwconvs.0.0",
+    "encoder4.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "encoder4.0.multi_scale_dwconv.dwconvs.1.0",
+    "encoder4.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "encoder4.0.multi_scale_dwconv.dwconvs.2.0",
+    "encoder4.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "encoder4.0.pconv2.0",
+    "encoder4.0.pconv2.1"
+   ],
+   [
+    "encoder5.0.pconv1.0",
+    "encoder5.0.pconv1.1"
+   ],
+   [
+    "encoder5.0.multi_scale_dwconv.dwconvs.0.0",
+    "encoder5.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "encoder5.0.multi_scale_dwconv.dwconvs.1.0",
+    "encoder5.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "encoder5.0.multi_scale_dwconv.dwconvs.2.0",
+    "encoder5.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "encoder5.0.pconv2.0",
+    "encoder5.0.pconv2.1"
+   ],
+   [
+    "decoder1.0.pconv1.0",
+    "decoder1.0.pconv1.1"
+   ],
+   [
+    "decoder1.0.multi_scale_dwconv.dwconvs.0.0",
+    "decoder1.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "decoder1.0.multi_scale_dwconv.dwconvs.1.0",
+    "decoder1.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "decoder1.0.multi_scale_dwconv.dwconvs.2.0",
+    "decoder1.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "decoder1.0.pconv2.0",
+    "decoder1.0.pconv2.1"
+   ],
+   [
+    "AG1.W_g.0",
+    "AG1.W_g.1"
+   ],
+   [
+    "AG1.W_x.0",
+    "AG1.W_x.1"
+   ],
+   [
+    "AG1.psi.0",
+    "AG1.psi.1"
+   ],
+   [
+    "decoder2.0.pconv1.0",
+    "decoder2.0.pconv1.1"
+   ],
+   [
+    "decoder2.0.multi_scale_dwconv.dwconvs.0.0",
+    "decoder2.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "decoder2.0.multi_scale_dwconv.dwconvs.1.0",
+    "decoder2.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "decoder2.0.multi_scale_dwconv.dwconvs.2.0",
+    "decoder2.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "decoder2.0.pconv2.0",
+    "decoder2.0.pconv2.1"
+   ],
+   [
+    "AG2.W_g.0",
+    "AG2.W_g.1"
+   ],
+   [
+    "AG2.W_x.0",
+    "AG2.W_x.1"
+   ],
+   [
+    "AG2.psi.0",
+    "AG2.psi.1"
+   ],
+   [
+    "decoder3.0.pconv1.0",
+    "decoder3.0.pconv1.1"
+   ],
+   [
+    "decoder3.0.multi_scale_dwconv.dwconvs.0.0",
+    "decoder3.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "decoder3.0.multi_scale_dwconv.dwconvs.1.0",
+    "decoder3.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "decoder3.0.multi_scale_dwconv.dwconvs.2.0",
+    "decoder3.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "decoder3.0.pconv2.0",
+    "decoder3.0.pconv2.1"
+   ],
+   [
+    "AG3.W_g.0",
+    "AG3.W_g.1"
+   ],
+   [
+    "AG3.W_x.0",
+    "AG3.W_x.1"
+   ],
+   [
+    "AG3.psi.0",
+    "AG3.psi.1"
+   ],
+   [
+    "decoder4.0.pconv1.0",
+    "decoder4.0.pconv1.1"
+   ],
+   [
+    "decoder4.0.multi_scale_dwconv.dwconvs.0.0",
+    "decoder4.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "decoder4.0.multi_scale_dwconv.dwconvs.1.0",
+    "decoder4.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "decoder4.0.multi_scale_dwconv.dwconvs.2.0",
+    "decoder4.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "decoder4.0.pconv2.0",
+    "decoder4.0.pconv2.1"
+   ],
+   [
+    "AG4.W_g.0",
+    "AG4.W_g.1"
+   ],
+   [
+    "AG4.W_x.0",
+    "AG4.W_x.1"
+   ],
+   [
+    "AG4.psi.0",
+    "AG4.psi.1"
+   ],
+   [
+    "decoder5.0.pconv1.0",
+    "decoder5.0.pconv1.1"
+   ],
+   [
+    "decoder5.0.multi_scale_dwconv.dwconvs.0.0",
+    "decoder5.0.multi_scale_dwconv.dwconvs.0.1"
+   ],
+   [
+    "decoder5.0.multi_scale_dwconv.dwconvs.1.0",
+    "decoder5.0.multi_scale_dwconv.dwconvs.1.1"
+   ],
+   [
+    "decoder5.0.multi_scale_dwconv.dwconvs.2.0",
+    "decoder5.0.multi_scale_dwconv.dwconvs.2.1"
+   ],
+   [
+    "decoder5.0.pconv2.0",
+    "decoder5.0.pconv2.1"
+   ]
+  ],
+  "accepted_maxdiff": 8.326672684688674e-17,
+  "ckpt": "<ARCHIVE>/runs/main/mk_unet/etis/k1",
+  "logit_absmax_randomised": 0.17585884852764444,
+  "n_candidates": 62,
+  "norm_counts": {
+   "bn": 62,
+   "gn": 0,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 1.633861780166626
+ },
+ "tinyunet": {
+  "accepted": [
+   [
+    "encoder1.cmrf.pwconv1.conv",
+    "encoder1.cmrf.pwconv1.bn"
+   ],
+   [
+    "encoder1.cmrf.m.0.conv",
+    "encoder1.cmrf.m.0.bn"
+   ],
+   [
+    "encoder1.cmrf.m.1.conv",
+    "encoder1.cmrf.m.1.bn"
+   ],
+   [
+    "encoder1.cmrf.m.2.conv",
+    "encoder1.cmrf.m.2.bn"
+   ],
+   [
+    "encoder1.cmrf.m.3.conv",
+    "encoder1.cmrf.m.3.bn"
+   ],
+   [
+    "encoder1.cmrf.m.4.conv",
+    "encoder1.cmrf.m.4.bn"
+   ],
+   [
+    "encoder1.cmrf.m.5.conv",
+    "encoder1.cmrf.m.5.bn"
+   ],
+   [
+    "encoder1.cmrf.m.6.conv",
+    "encoder1.cmrf.m.6.bn"
+   ],
+   [
+    "encoder1.cmrf.pwconv2.conv",
+    "encoder1.cmrf.pwconv2.bn"
+   ],
+   [
+    "encoder2.cmrf.pwconv1.conv",
+    "encoder2.cmrf.pwconv1.bn"
+   ],
+   [
+    "encoder2.cmrf.m.0.conv",
+    "encoder2.cmrf.m.0.bn"
+   ],
+   [
+    "encoder2.cmrf.m.1.conv",
+    "encoder2.cmrf.m.1.bn"
+   ],
+   [
+    "encoder2.cmrf.m.2.conv",
+    "encoder2.cmrf.m.2.bn"
+   ],
+   [
+    "encoder2.cmrf.m.3.conv",
+    "encoder2.cmrf.m.3.bn"
+   ],
+   [
+    "encoder2.cmrf.m.4.conv",
+    "encoder2.cmrf.m.4.bn"
+   ],
+   [
+    "encoder2.cmrf.m.5.conv",
+    "encoder2.cmrf.m.5.bn"
+   ],
+   [
+    "encoder2.cmrf.m.6.conv",
+    "encoder2.cmrf.m.6.bn"
+   ],
+   [
+    "encoder2.cmrf.pwconv2.conv",
+    "encoder2.cmrf.pwconv2.bn"
+   ],
+   [
+    "encoder3.cmrf.pwconv1.conv",
+    "encoder3.cmrf.pwconv1.bn"
+   ],
+   [
+    "encoder3.cmrf.m.0.conv",
+    "encoder3.cmrf.m.0.bn"
+   ],
+   [
+    "encoder3.cmrf.m.1.conv",
+    "encoder3.cmrf.m.1.bn"
+   ],
+   [
+    "encoder3.cmrf.m.2.conv",
+    "encoder3.cmrf.m.2.bn"
+   ],
+   [
+    "encoder3.cmrf.m.3.conv",
+    "encoder3.cmrf.m.3.bn"
+   ],
+   [
+    "encoder3.cmrf.m.4.conv",
+    "encoder3.cmrf.m.4.bn"
+   ],
+   [
+    "encoder3.cmrf.m.5.conv",
+    "encoder3.cmrf.m.5.bn"
+   ],
+   [
+    "encoder3.cmrf.m.6.conv",
+    "encoder3.cmrf.m.6.bn"
+   ],
+   [
+    "encoder3.cmrf.pwconv2.conv",
+    "encoder3.cmrf.pwconv2.bn"
+   ],
+   [
+    "encoder4.cmrf.pwconv1.conv",
+    "encoder4.cmrf.pwconv1.bn"
+   ],
+   [
+    "encoder4.cmrf.m.0.conv",
+    "encoder4.cmrf.m.0.bn"
+   ],
+   [
+    "encoder4.cmrf.m.1.conv",
+    "encoder4.cmrf.m.1.bn"
+   ],
+   [
+    "encoder4.cmrf.m.2.conv",
+    "encoder4.cmrf.m.2.bn"
+   ],
+   [
+    "encoder4.cmrf.m.3.conv",
+    "encoder4.cmrf.m.3.bn"
+   ],
+   [
+    "encoder4.cmrf.m.4.conv",
+    "encoder4.cmrf.m.4.bn"
+   ],
+   [
+    "encoder4.cmrf.m.5.conv",
+    "encoder4.cmrf.m.5.bn"
+   ],
+   [
+    "encoder4.cmrf.m.6.conv",
+    "encoder4.cmrf.m.6.bn"
+   ],
+   [
+    "encoder4.cmrf.pwconv2.conv",
+    "encoder4.cmrf.pwconv2.bn"
+   ],
+   [
+    "decoder4.cmrf.pwconv1.conv",
+    "decoder4.cmrf.pwconv1.bn"
+   ],
+   [
+    "decoder4.cmrf.m.0.conv",
+    "decoder4.cmrf.m.0.bn"
+   ],
+   [
+    "decoder4.cmrf.m.1.conv",
+    "decoder4.cmrf.m.1.bn"
+   ],
+   [
+    "decoder4.cmrf.m.2.conv",
+    "decoder4.cmrf.m.2.bn"
+   ],
+   [
+    "decoder4.cmrf.m.3.conv",
+    "decoder4.cmrf.m.3.bn"
+   ],
+   [
+    "decoder4.cmrf.m.4.conv",
+    "decoder4.cmrf.m.4.bn"
+   ],
+   [
+    "decoder4.cmrf.m.5.conv",
+    "decoder4.cmrf.m.5.bn"
+   ],
+   [
+    "decoder4.cmrf.m.6.conv",
+    "decoder4.cmrf.m.6.bn"
+   ],
+   [
+    "decoder4.cmrf.pwconv2.conv",
+    "decoder4.cmrf.pwconv2.bn"
+   ],
+   [
+    "decoder3.cmrf.pwconv1.conv",
+    "decoder3.cmrf.pwconv1.bn"
+   ],
+   [
+    "decoder3.cmrf.m.0.conv",
+    "decoder3.cmrf.m.0.bn"
+   ],
+   [
+    "decoder3.cmrf.m.1.conv",
+    "decoder3.cmrf.m.1.bn"
+   ],
+   [
+    "decoder3.cmrf.m.2.conv",
+    "decoder3.cmrf.m.2.bn"
+   ],
+   [
+    "decoder3.cmrf.m.3.conv",
+    "decoder3.cmrf.m.3.bn"
+   ],
+   [
+    "decoder3.cmrf.m.4.conv",
+    "decoder3.cmrf.m.4.bn"
+   ],
+   [
+    "decoder3.cmrf.m.5.conv",
+    "decoder3.cmrf.m.5.bn"
+   ],
+   [
+    "decoder3.cmrf.m.6.conv",
+    "decoder3.cmrf.m.6.bn"
+   ],
+   [
+    "decoder3.cmrf.pwconv2.conv",
+    "decoder3.cmrf.pwconv2.bn"
+   ],
+   [
+    "decoder2.cmrf.pwconv1.conv",
+    "decoder2.cmrf.pwconv1.bn"
+   ],
+   [
+    "decoder2.cmrf.m.0.conv",
+    "decoder2.cmrf.m.0.bn"
+   ],
+   [
+    "decoder2.cmrf.m.1.conv",
+    "decoder2.cmrf.m.1.bn"
+   ],
+   [
+    "decoder2.cmrf.m.2.conv",
+    "decoder2.cmrf.m.2.bn"
+   ],
+   [
+    "decoder2.cmrf.m.3.conv",
+    "decoder2.cmrf.m.3.bn"
+   ],
+   [
+    "decoder2.cmrf.m.4.conv",
+    "decoder2.cmrf.m.4.bn"
+   ],
+   [
+    "decoder2.cmrf.m.5.conv",
+    "decoder2.cmrf.m.5.bn"
+   ],
+   [
+    "decoder2.cmrf.m.6.conv",
+    "decoder2.cmrf.m.6.bn"
+   ],
+   [
+    "decoder2.cmrf.pwconv2.conv",
+    "decoder2.cmrf.pwconv2.bn"
+   ],
+   [
+    "decoder1.cmrf.pwconv1.conv",
+    "decoder1.cmrf.pwconv1.bn"
+   ],
+   [
+    "decoder1.cmrf.m.0.conv",
+    "decoder1.cmrf.m.0.bn"
+   ],
+   [
+    "decoder1.cmrf.m.1.conv",
+    "decoder1.cmrf.m.1.bn"
+   ],
+   [
+    "decoder1.cmrf.m.2.conv",
+    "decoder1.cmrf.m.2.bn"
+   ],
+   [
+    "decoder1.cmrf.m.3.conv",
+    "decoder1.cmrf.m.3.bn"
+   ],
+   [
+    "decoder1.cmrf.m.4.conv",
+    "decoder1.cmrf.m.4.bn"
+   ],
+   [
+    "decoder1.cmrf.m.5.conv",
+    "decoder1.cmrf.m.5.bn"
+   ],
+   [
+    "decoder1.cmrf.m.6.conv",
+    "decoder1.cmrf.m.6.bn"
+   ],
+   [
+    "decoder1.cmrf.pwconv2.conv",
+    "decoder1.cmrf.pwconv2.bn"
+   ]
+  ],
+  "accepted_maxdiff": 3.3306690738754696e-16,
+  "ckpt": "<ARCHIVE>/runs/main/tinyunet/etis/k1",
+  "logit_absmax_randomised": 0.26132568333495293,
+  "n_candidates": 72,
+  "norm_counts": {
+   "bn": 72,
+   "gn": 0,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 5.080987453460693
+ },
+ "ucmnet": {
+  "accepted": [],
+  "accepted_maxdiff": 0.0,
+  "ckpt": "<ARCHIVE>/runs/main/ucmnet/etis/k1",
+  "logit_absmax_randomised": 7.399324141908365,
+  "n_candidates": 0,
+  "norm_counts": {
+   "bn": 0,
+   "gn": 6,
+   "ln": 25
+  },
+  "rejected": [],
+  "wall_s": 0.19103765487670898
+ },
+ "utanet": {
+  "accepted": [
+   [
+    "conv1.0",
+    "conv1.1"
+   ],
+   [
+    "resnet.layer1.0.conv1",
+    "resnet.layer1.0.bn1"
+   ],
+   [
+    "resnet.layer1.0.conv2",
+    "resnet.layer1.0.bn2"
+   ],
+   [
+    "resnet.layer1.1.conv1",
+    "resnet.layer1.1.bn1"
+   ],
+   [
+    "resnet.layer1.1.conv2",
+    "resnet.layer1.1.bn2"
+   ],
+   [
+    "resnet.layer1.2.conv1",
+    "resnet.layer1.2.bn1"
+   ],
+   [
+    "resnet.layer1.2.conv2",
+    "resnet.layer1.2.bn2"
+   ],
+   [
+    "resnet.layer2.0.conv1",
+    "resnet.layer2.0.bn1"
+   ],
+   [
+    "resnet.layer2.0.conv2",
+    "resnet.layer2.0.bn2"
+   ],
+   [
+    "resnet.layer2.0.downsample.0",
+    "resnet.layer2.0.downsample.1"
+   ],
+   [
+    "resnet.layer2.1.conv1",
+    "resnet.layer2.1.bn1"
+   ],
+   [
+    "resnet.layer2.1.conv2",
+    "resnet.layer2.1.bn2"
+   ],
+   [
+    "resnet.layer2.2.conv1",
+    "resnet.layer2.2.bn1"
+   ],
+   [
+    "resnet.layer2.2.conv2",
+    "resnet.layer2.2.bn2"
+   ],
+   [
+    "resnet.layer2.3.conv1",
+    "resnet.layer2.3.bn1"
+   ],
+   [
+    "resnet.layer2.3.conv2",
+    "resnet.layer2.3.bn2"
+   ],
+   [
+    "resnet.layer3.0.conv1",
+    "resnet.layer3.0.bn1"
+   ],
+   [
+    "resnet.layer3.0.conv2",
+    "resnet.layer3.0.bn2"
+   ],
+   [
+    "resnet.layer3.0.downsample.0",
+    "resnet.layer3.0.downsample.1"
+   ],
+   [
+    "resnet.layer3.1.conv1",
+    "resnet.layer3.1.bn1"
+   ],
+   [
+    "resnet.layer3.1.conv2",
+    "resnet.layer3.1.bn2"
+   ],
+   [
+    "resnet.layer3.2.conv1",
+    "resnet.layer3.2.bn1"
+   ],
+   [
+    "resnet.layer3.2.conv2",
+    "resnet.layer3.2.bn2"
+   ],
+   [
+    "resnet.layer3.3.conv1",
+    "resnet.layer3.3.bn1"
+   ],
+   [
+    "resnet.layer3.3.conv2",
+    "resnet.layer3.3.bn2"
+   ],
+   [
+    "resnet.layer3.4.conv1",
+    "resnet.layer3.4.bn1"
+   ],
+   [
+    "resnet.layer3.4.conv2",
+    "resnet.layer3.4.bn2"
+   ],
+   [
+    "resnet.layer3.5.conv1",
+    "resnet.layer3.5.bn1"
+   ],
+   [
+    "resnet.layer3.5.conv2",
+    "resnet.layer3.5.bn2"
+   ],
+   [
+    "resnet.layer4.0.conv1",
+    "resnet.layer4.0.bn1"
+   ],
+   [
+    "resnet.layer4.0.conv2",
+    "resnet.layer4.0.bn2"
+   ],
+   [
+    "resnet.layer4.0.downsample.0",
+    "resnet.layer4.0.downsample.1"
+   ],
+   [
+    "resnet.layer4.1.conv1",
+    "resnet.layer4.1.bn1"
+   ],
+   [
+    "resnet.layer4.1.conv2",
+    "resnet.layer4.1.bn2"
+   ],
+   [
+    "resnet.layer4.2.conv1",
+    "resnet.layer4.2.bn1"
+   ],
+   [
+    "resnet.layer4.2.conv2",
+    "resnet.layer4.2.bn2"
+   ],
+   [
+    "up5.up.0",
+    "up5.up.1"
+   ],
+   [
+    "up5.conv.0",
+    "up5.conv.1"
+   ],
+   [
+    "up4.up.0",
+    "up4.up.1"
+   ],
+   [
+    "up4.conv.0",
+    "up4.conv.1"
+   ],
+   [
+    "up3.up.0",
+    "up3.up.1"
+   ],
+   [
+    "up3.conv.0",
+    "up3.conv.1"
+   ],
+   [
+    "up2.up.0",
+    "up2.up.1"
+   ],
+   [
+    "up2.conv.0",
+    "up2.conv.1"
+   ],
+   [
+    "pred.0",
+    "pred.1"
+   ]
+  ],
+  "accepted_maxdiff": 360448.0,
+  "ckpt": "<ARCHIVE>/runs/main/utanet/etis/k1",
+  "logit_absmax_randomised": 2.5065915362752967e+20,
+  "n_candidates": 45,
+  "norm_counts": {
+   "bn": 46,
+   "gn": 0,
+   "ln": 0
+  },
+  "rejected": [],
+  "wall_s": 14.59918737411499
+ }
+}

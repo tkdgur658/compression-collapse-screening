@@ -1,0 +1,133 @@
+{
+ "ALL_PASS": true,
+ "S1_all_repaired": {
+  "PASS": true,
+  "branches": [],
+  "expected": {
+   "B1_better": false,
+   "H_R1": "PASS",
+   "H_R2": "FAIL",
+   "H_R4": "PASS",
+   "n_SGR": 55
+  },
+  "got": {
+   "B1_better": false,
+   "H_R1": "PASS",
+   "H_R2": "FAIL",
+   "H_R4": "PASS",
+   "n_SGR": 55
+  },
+  "holm": {
+   "p": {
+    "H_R2": 1.0,
+    "H_R4": 0.0
+   },
+   "reject": {
+    "H_R2": false,
+    "H_R4": true
+   }
+  }
+ },
+ "S2_all_fail": {
+  "PASS": true,
+  "branches": [
+   "H_R1 not met: report \"label-free repair under mask / bit-width preservation reaches 0/55 cells\"; R2 = partial verification"
+  ],
+  "expected": {
+   "B1_better": false,
+   "H_R1": "FAIL",
+   "H_R2": "FAIL",
+   "H_R4": "NOT TESTABLE",
+   "n_SGR": 0
+  },
+  "got": {
+   "B1_better": false,
+   "H_R1": "FAIL",
+   "H_R2": "FAIL",
+   "H_R4": "NOT TESTABLE",
+   "n_SGR": 0
+  },
+  "holm": {
+   "p": {
+    "H_R2": 1.0,
+    "H_R4": 1.0
+   },
+   "reject": {
+    "H_R2": false,
+    "H_R4": false
+   }
+  }
+ },
+ "S3_B1_better": {
+  "PASS": true,
+  "branches": [
+   "B1 repairs more cells than SGR: SGR discarded, B1 reported as the R2 implementation",
+   "H_R1 not met: report \"label-free repair under mask / bit-width preservation reaches 30/55 cells\"; R2 = partial verification"
+  ],
+  "expected": {
+   "B1_better": true,
+   "H_R1": "FAIL",
+   "H_R2": "FAIL",
+   "H_R4": "FAIL",
+   "n_SGR": 30
+  },
+  "got": {
+   "B1_better": true,
+   "H_R1": "FAIL",
+   "H_R2": "FAIL",
+   "H_R4": "FAIL",
+   "n_SGR": 30
+  },
+  "holm": {
+   "p": {
+    "H_R2": 1.0,
+    "H_R4": 0.9955
+   },
+   "reject": {
+    "H_R2": false,
+    "H_R4": false
+   }
+  }
+ },
+ "S4_SGR_better": {
+  "PASS": true,
+  "branches": [],
+  "expected": {
+   "B1_better": false,
+   "H_R1": "PASS",
+   "H_R2": "PASS",
+   "H_R4": "PASS",
+   "n_SGR": 45,
+   "p_H_R2": 2.9802322387695312e-08
+  },
+  "got": {
+   "B1_better": false,
+   "H_R1": "PASS",
+   "H_R2": "PASS",
+   "H_R4": "PASS",
+   "n_SGR": 45,
+   "p_H_R2": 2.9802322387695312e-08
+  },
+  "holm": {
+   "p": {
+    "H_R2": 2.9802322387695312e-08,
+    "H_R4": 0.0
+   },
+   "reject": {
+    "H_R2": true,
+    "H_R4": true
+   }
+  }
+ },
+ "holm_unit": {
+  "PASS": true
+ },
+ "mcnemar_unit": {
+  "PASS": true,
+  "p_10_2": 0.019287109375
+ },
+ "straddle_mean_rule": {
+  "PASS": true,
+  "cell": "cmunext|PH2"
+ }
+}

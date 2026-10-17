@@ -1,0 +1,24 @@
+% CHECK: source? Every cell of this table (Proposed and the ten baselines) has no traceable protocol-v1 result file. The protocol-v1 table generated from runs is paper_out_v1/paper_out/tb_main.tex (60/66 complete cells, Proposed incomplete) and its baseline cells DIFFER from this table (e.g. ISIC 2017 MAResUNet 0.837 vs 0.822 here, ETIS MK-UNet 0.618 vs 0.671 here). Per the re-submission plan (sections 6 and 10) and <workspace>/00_BRIEF.md (legacy-protocol rows), these cells come from the legacy mixed-protocol pipeline. Numbers are left unchanged by instruction; see CHANGELOG open issue 1.
+\begin{table*}[!t]
+\centering
+\caption{\label{tab:main_polyp}Segmentation IoU of the evaluated models on PH2, ISIC 2017, ISIC 2018, Kvasir-SEG, CVC-ClinicDB, and ETIS-LaribPolypDB. Each entry reports the mean and standard deviation over five runs, and bold type marks the highest mean in each dataset. % TODO(numbers/stats): regenerate cells; define the significance marks (test, pairing unit, sidedness, correction) or remove them.
+}
+
+\begin{tblr}{colspec={ X[c,1] X[c,1] X[c,1] X[c,1] X[c,1] X[c,1] X[c,1] }, width=\textwidth, colsep=0.5pt}
+\hline
+ Model Name & PH2 & ISIC 2017 & ISIC 2018 & Kvasir-SEG & CVC-ClinicDB & ETIS-LaribPolypDB \\
+\hline
+Proposed & {\textbf{0.889 $\pm$ 0.016}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.860 $\pm$ 0.008}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.845 $\pm$ 0.008}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.784 $\pm$ 0.017}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.880 $\pm$ 0.013}\phantom{$^{\blacktriangledown}$}} & {\textbf{0.759 $\pm$ 0.027}\phantom{$^{\blacktriangledown}$}} \\
+MAResUNet & {0.876 $\pm$ 0.009$^{\blacktriangledown}$} & {0.822 $\pm$ 0.008$^{\blacktriangledown}$} & {0.813 $\pm$ 0.006$^{\blacktriangledown}$} & {0.757 $\pm$ 0.024\phantom{$^{\blacktriangledown}$}} & {0.854 $\pm$ 0.029$^{\blacktriangledown}$} & {0.623 $\pm$ 0.064$^{\blacktriangledown}$} \\
+UTANet & {0.863 $\pm$ 0.023$^{\blacktriangledown}$} & {0.825 $\pm$ 0.008$^{\blacktriangledown}$} & {0.818 $\pm$ 0.003$^{\blacktriangledown}$} & {0.767 $\pm$ 0.023\phantom{$^{\blacktriangledown}$}} & {0.782 $\pm$ 0.022$^{\blacktriangledown}$} & {0.536 $\pm$ 0.049$^{\blacktriangledown}$} \\
+MK-UNet & {0.882 $\pm$ 0.015\phantom{$^{\blacktriangledown}$}} & {0.825 $\pm$ 0.005$^{\blacktriangledown}$} & {0.816 $\pm$ 0.007$^{\blacktriangledown}$} & {0.745 $\pm$ 0.028$^{\blacktriangledown}$} & {0.835 $\pm$ 0.026\phantom{$^{\blacktriangledown}$}} & {0.671 $\pm$ 0.071$^{\blacktriangledown}$} \\
+MHorUNet & {0.876 $\pm$ 0.005\phantom{$^{\blacktriangledown}$}} & {0.825 $\pm$ 0.005$^{\blacktriangledown}$} & {0.812 $\pm$ 0.007$^{\blacktriangledown}$} & {0.721 $\pm$ 0.015$^{\blacktriangledown}$} & {0.780 $\pm$ 0.028$^{\blacktriangledown}$} & {0.627 $\pm$ 0.048$^{\blacktriangledown}$} \\
+TinyU-Net & {0.866 $\pm$ 0.015$^{\blacktriangledown}$} & {0.823 $\pm$ 0.008$^{\blacktriangledown}$} & {0.816 $\pm$ 0.008$^{\blacktriangledown}$} & {0.738 $\pm$ 0.031$^{\blacktriangledown}$} & {0.824 $\pm$ 0.021$^{\blacktriangledown}$} & {0.667 $\pm$ 0.047$^{\blacktriangledown}$} \\
+UCMNet & {0.823 $\pm$ 0.014$^{\blacktriangledown}$} & {0.742 $\pm$ 0.004$^{\blacktriangledown}$} & {0.740 $\pm$ 0.008$^{\blacktriangledown}$} & {0.655 $\pm$ 0.030$^{\blacktriangledown}$} & {0.738 $\pm$ 0.031$^{\blacktriangledown}$} & {0.549 $\pm$ 0.086$^{\blacktriangledown}$} \\
+LB-UNet & {0.809 $\pm$ 0.007$^{\blacktriangledown}$} & {0.740 $\pm$ 0.005$^{\blacktriangledown}$} & {0.736 $\pm$ 0.008$^{\blacktriangledown}$} & {0.622 $\pm$ 0.030$^{\blacktriangledown}$} & {0.662 $\pm$ 0.021$^{\blacktriangledown}$} & {0.451 $\pm$ 0.016$^{\blacktriangledown}$} \\
+CMUNeXt & {0.864 $\pm$ 0.014$^{\blacktriangledown}$} & {0.826 $\pm$ 0.009$^{\blacktriangledown}$} & {0.820 $\pm$ 0.006$^{\blacktriangledown}$} & {0.726 $\pm$ 0.014$^{\blacktriangledown}$} & {0.752 $\pm$ 0.015$^{\blacktriangledown}$} & {0.455 $\pm$ 0.093$^{\blacktriangledown}$} \\
+EGEUNet & {0.774 $\pm$ 0.016$^{\blacktriangledown}$} & {0.717 $\pm$ 0.010$^{\blacktriangledown}$} & {0.716 $\pm$ 0.005$^{\blacktriangledown}$} & {0.586 $\pm$ 0.048$^{\blacktriangledown}$} & {0.558 $\pm$ 0.032$^{\blacktriangledown}$} & {0.351 $\pm$ 0.046$^{\blacktriangledown}$} \\
+MALUNet & {0.862 $\pm$ 0.016$^{\blacktriangledown}$} & {0.821 $\pm$ 0.004$^{\blacktriangledown}$} & {0.810 $\pm$ 0.006$^{\blacktriangledown}$} & {0.591 $\pm$ 0.042$^{\blacktriangledown}$} & {0.615 $\pm$ 0.015$^{\blacktriangledown}$} & {0.337 $\pm$ 0.076$^{\blacktriangledown}$} \\
+\hline
+\end{tblr}
+\end{table*}

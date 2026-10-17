@@ -1,0 +1,14 @@
+{
+ "model": "cmunext",
+ "class": "CMUNeXt",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/CMUNeXt.py",
+  "sha256": "cae1d28e7de924fe6f8d667211a498489a6f9765d6a0cbb986b43aeca9ba3f55",
+  "copied_to": "src/CMUNeXt.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

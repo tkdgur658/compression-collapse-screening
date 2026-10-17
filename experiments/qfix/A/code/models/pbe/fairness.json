@@ -1,0 +1,18 @@
+{
+ "matched": [
+  "split folders and seeds",
+  "preprocessing and augmentation",
+  "optimizer, schedule, epochs, batch, grad clip",
+  "checkpoint rule (max val mean IoU)",
+  "metric and threshold",
+  "GPU (gpu-server RTX 3090 GPU 1) and software env"
+ ],
+ "intended_differences": [
+  "train-only matching loss on skip heads (lambda 0.1)",
+  "decoder deep supervision (5 side outputs) as in the legacy base network"
+ ],
+ "unresolved_differences": [
+  "baselines use the common protocol v1 hyperparameters instead of each original paper (lr, epochs, input size); recorded per baseline"
+ ],
+ "privileged_information": "none"
+}

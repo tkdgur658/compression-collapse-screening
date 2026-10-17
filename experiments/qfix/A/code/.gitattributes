@@ -1,0 +1,1 @@
+models/*/src/[A-Z]*.py -text

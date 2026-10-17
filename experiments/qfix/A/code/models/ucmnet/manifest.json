@@ -1,0 +1,14 @@
+{
+ "model": "ucmnet",
+ "class": "UCMNet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/UCMNet.py",
+  "sha256": "60b0493d70fb9dbda4badf1a92ab89e787c9c321d50fc5c63226f5c745b95904",
+  "copied_to": "src/UCMNet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}

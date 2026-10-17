@@ -1,0 +1,14 @@
+{
+ "model": "utanet",
+ "class": "UTANet",
+ "role": "baseline",
+ "source": {
+  "legacy_repo": "gpu-server:<LEGACY_REPO>",
+  "legacy_path": "models/UTANet.py",
+  "sha256": "33b47f16f4787c13299cfd0e06fd48f5fa16880e85baf9296495353bd2e56066",
+  "copied_to": "src/UTANet.py",
+  "modified": false
+ },
+ "upstream": "TODO: official repository URL and commit",
+ "validation": "pending"
+}
